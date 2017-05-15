@@ -29,7 +29,6 @@
         <script>scripts\scr_Player_TakeOff.gml</script>
       </scripts>
       <scripts name="Camera">
-        <script>scripts\scr_Camera_OnCreate.gml</script>
         <script>scripts\scr_Camera_OnStep.gml</script>
       </scripts>
     </scripts>
