@@ -1,0 +1,1 @@
+vspCurrent += verGravity;
