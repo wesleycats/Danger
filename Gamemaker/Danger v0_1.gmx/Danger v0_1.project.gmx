@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\spr_Player</sprite>
     <sprite>sprites\spr_Ground</sprite>
+    <sprite>sprites\StartButton</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Space</background>
@@ -29,12 +30,17 @@
       <script>scripts\scr_Ground_OnCreate.gml</script>
       <script>scripts\scr_Ground_OnDraw.gml</script>
     </scripts>
+    <scripts name="Menu">
+      <script>scripts\scr_Menu.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_Ground</object>
     <object>objects\obj_Player</object>
+    <object>objects\obj_Button</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Menu</room>
     <room>rooms\Level1</room>
   </rooms>
   <help>
