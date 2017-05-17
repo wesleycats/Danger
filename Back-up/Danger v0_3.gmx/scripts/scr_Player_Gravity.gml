@@ -1,4 +1,0 @@
-if (!onGround)
-{
-    vspCurrent += verGravity;
-}
