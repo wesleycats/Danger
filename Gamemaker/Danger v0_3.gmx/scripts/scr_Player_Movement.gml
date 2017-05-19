@@ -4,10 +4,15 @@ if (instance_exists(obj_TakeOff))
     if (keyboard_check(vk_space))
     {
         vspCurrent -= verAcceleration;
+        powerOn = true;
+    }
+    else
+    {
+        powerOn = false;
     }
 }
 
-// Moves the player right
+// Moves the player right and left
 if (!onGround)
 {
     if (keyboard_check(ord('D')))
@@ -18,6 +23,22 @@ if (!onGround)
     if (keyboard_check(ord('A')))
     {
         hspCurrent -= horAcceleration;
+    }
+}
+
+// Turns the player right and left
+if (!onGround)
+{
+    if (keyboard_check(ord('D')))
+    {
+        rot -= 3;
+        image_angle -= 3;
+    }
+    
+    if (keyboard_check(ord('A')))
+    {
+        rot += 3;
+        image_angle += 3;
     }
 }
 
@@ -45,5 +66,3 @@ if (hspCurrent <= -maxHsp)
 {
     hspCurrent = -maxHsp;
 }
-
-

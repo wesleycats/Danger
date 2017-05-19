@@ -1,4 +1,4 @@
-window_set_fullscreen(false);
+window_set_fullscreen(true);
 
 x = room_width / 2;
 y = room_height - sprite_height;
@@ -27,5 +27,9 @@ enum PowerForceState
     Decrease = 2
 }
 
+rot = 0;
+
 currentPowerState = PowerForceState.None;
 newPowerState = PowerForceState.Increase;
+
+image_angle = 90;
