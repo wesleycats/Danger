@@ -1,0 +1,1 @@
+coinsCollected = 0;
