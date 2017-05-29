@@ -26,6 +26,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Space</background>
+    <background>background\bg_Earth</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
