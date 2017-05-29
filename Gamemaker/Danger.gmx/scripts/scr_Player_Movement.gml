@@ -67,6 +67,11 @@ if (instance_exists(obj_TakeOff))
     if (keyboard_check(vk_space))
     {
         motion_add(image_angle, verAcceleration);
+        sprite_index = spr_PlayerFly;
+    }
+    else
+    {
+        sprite_index = spr_Player;
     }
     
     if (keyboard_check(ord('D')))
@@ -107,7 +112,7 @@ if (vspCurrent >= maxDownVsp)
 }
 
 // When player finishes the level
-if (y <= 150)
+if (y <= 50)
 {
     instance_create(x, y, obj_Fade);
 }

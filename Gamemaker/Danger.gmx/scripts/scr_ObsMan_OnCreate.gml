@@ -13,5 +13,10 @@ maxAstHeight = 400;
 
 ufoAmount = 0;
 ufoFlyDir = 0;
-minUfoHeight = 600;
-maxUfoHeight = 1000;
+minUfoHeight = 1000;
+maxUfoHeight = 4000;
+
+satAmount = 0;
+satFlyDir = 0;
+minSatHeight = 1000;
+maxSatHeight = 3000;

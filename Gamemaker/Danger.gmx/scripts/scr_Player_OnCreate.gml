@@ -1,5 +1,3 @@
-window_set_fullscreen(true);
-
 x = room_width / 2;
 y = room_height - sprite_height;
 
@@ -10,6 +8,10 @@ maxDownVsp = 2;
 maxHsp = 2;
 verAcceleration = 7;
 horAcceleration = 1;
+
+roomName = room_get_name(room);
+
+
 verGravity = 0.5;
 horDrag = 0.1;
 

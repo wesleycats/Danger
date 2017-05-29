@@ -4,6 +4,7 @@ if (!instance_exists(obj_TakeOff))
     if (keyboard_check(vk_space))
     {
         powerForce += powerForceCharge;
+        sprite_index = spr_PlayerFly;
     }
     
     if (keyboard_check_released(vk_space))

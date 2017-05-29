@@ -4,9 +4,14 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_GameMusic</sound>
+  </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_Player</sprite>
+    <sprites name="Player">
+      <sprite>sprites\spr_Player</sprite>
+      <sprite>sprites\spr_PlayerFly</sprite>
+    </sprites>
     <sprites name="World">
       <sprite>sprites\spr_Ground</sprite>
       <sprite>sprites\spr_Coin</sprite>
@@ -54,6 +59,7 @@
         </scripts>
       </scripts>
       <scripts name="Level Manager">
+        <script>scripts\scr_LevelMan_OnCreate.gml</script>
         <script>scripts\scr_LevelMan_OnStep.gml</script>
       </scripts>
     </scripts>
@@ -76,6 +82,16 @@
           <script>scripts\scr_Bird_Movement.gml</script>
           <script>scripts\scr_Bird_Collision.gml</script>
           <script>scripts\scr_Bird_Spawn.gml</script>
+        </scripts>
+      </scripts>
+      <scripts name="Satellite">
+        <script>scripts\scr_Satellite_OnCreate.gml</script>
+        <script>scripts\scr_Satellite_OnStep.gml</script>
+        <script>scripts\scr_Satellite_OnDraw.gml</script>
+        <scripts name="Step Functions">
+          <script>scripts\scr_Satellite_Movement.gml</script>
+          <script>scripts\scr_Satellite_Collision.gml</script>
+          <script>scripts\scr_Satellite_Spawn.gml</script>
         </scripts>
       </scripts>
       <scripts name="Ufo">

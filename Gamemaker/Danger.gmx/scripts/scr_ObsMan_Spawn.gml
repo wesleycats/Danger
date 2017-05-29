@@ -1,17 +1,106 @@
 var roomName = room_get_name(room);
 
-if (roomName == "Earth")
+if (roomName != "Menu" && roomName != "PlanetMenu")
 {
-    scr_Bird_Spawn();
-    scr_Asteroid_Spawn();
+    
 }
 
-if (roomName == "Mercurius")
-{
+switch (roomName)
+{   
+    case "Mercurius":
+    
     scr_Asteroid_Spawn();
     
-    if (ufoSpawnChance > 90)
+    if (ufoSpawnChance > 95)
     {
         scr_Ufo_Spawn();
-    }
+    }    
+    
+    break;
+    
+    case "Venus":
+    
+    scr_Asteroid_Spawn();
+    
+    if (ufoSpawnChance > 85)
+    {
+        scr_Ufo_Spawn();
+    }  
+    
+    break;
+    
+    case "Earth":
+    
+    scr_Asteroid_Spawn();
+    
+    if (ufoSpawnChance > 95)
+    {
+        scr_Ufo_Spawn();
+    }  
+    
+    scr_Bird_Spawn();
+    
+    break;
+    
+    case "Mars":
+    
+    scr_Asteroid_Spawn();
+    
+    if (ufoSpawnChance > 60)
+    {
+        scr_Ufo_Spawn();
+    }  
+    
+    break;
+    
+    case "Jupiter":
+    
+    scr_Asteroid_Spawn();
+    
+    if (ufoSpawnChance > 85)
+    {
+        scr_Ufo_Spawn();
+    }  
+    
+    break;
+    
+    case "Saturnus":
+    
+    scr_Asteroid_Spawn();
+    
+    if (ufoSpawnChance > 85)
+    {
+        scr_Ufo_Spawn();
+    }  
+    
+    break;
+    
+    case "Uranus":
+    
+    scr_Asteroid_Spawn();
+    
+    if (ufoSpawnChance > 65)
+    {
+        scr_Ufo_Spawn();
+    }  
+    
+    break;
+    
+    case "Neptunus":
+    
+    scr_Asteroid_Spawn();
+    
+    if (ufoSpawnChance > 70)
+    {
+        scr_Ufo_Spawn();
+    }  
+    
+    break;
+    
+    default: 
+    
+    break;
+    
 }
+
+

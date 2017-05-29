@@ -15,3 +15,7 @@ randRot = random_range(-4, 4);
 xScale = random_range(1, 2.5);
 yScale = random_range(1, 2.5);
 
+image_index = choose(0, 1);
+
+image_speed = 0;
+
