@@ -30,6 +30,7 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\switch_planets.gml</script>
     <scripts name="Player">
       <script>scripts\scr_Player_OnCreate.gml</script>
       <script>scripts\scr_Player_OnStep.gml</script>

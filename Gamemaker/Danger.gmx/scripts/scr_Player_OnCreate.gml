@@ -1,19 +1,90 @@
+roomName = room_get_name(room);
+
 x = room_width / 2;
 y = room_height - sprite_height;
 
 vspCurrent = 0;
 hspCurrent = 0;
-maxVsp = 15;
-maxDownVsp = 2;
-maxHsp = 2;
+
+switch (roomName)
+{
+    case "Mercurius":
+    
+    maxVsp = 15;
+    maxDownVsp = 2;
+    maxHsp = 2;
+    verGravity = 0.189;
+    
+    break;
+    
+    case "Venus":
+    
+    maxVsp = 15;
+    maxDownVsp = 2;
+    maxHsp = 2;
+    verGravity = 0.454;
+    
+    break;
+    
+    case "Earth":
+    
+    
+    maxVsp = 15;
+    maxDownVsp = 2;
+    maxHsp = 2;
+    verGravity = 0.5;
+    
+    break;
+    
+    case "Mars":
+    
+    maxVsp = 15;
+    maxDownVsp = 2;
+    maxHsp = 2;
+    verGravity = 0.189;
+
+    break;
+    
+    case "Jupiter":
+    
+    maxVsp = 15;
+    maxDownVsp = 2;
+    maxHsp = 2;
+    verGravity = 1.18;
+    
+    break;
+    
+    case "Saturnus":
+    
+    maxVsp = 15;
+    maxDownVsp = 2;
+    maxHsp = 2;
+    verGravity = 0.458;
+    
+    break;
+    
+    case "Uranus":
+    
+    maxVsp = 15;
+    maxDownVsp = 2;
+    maxHsp = 2;
+    verGravity = 0.445;
+    
+    break;
+    
+    case "Neptunus":
+    
+    maxVsp = 15;
+    maxDownVsp = 2;
+    maxHsp = 2;
+    verGravity = 0.56;
+    
+    break;
+}
+
+horDrag = 0.1;
 verAcceleration = 7;
 horAcceleration = 1;
-
-roomName = room_get_name(room);
-
-
-verGravity = 0.5;
-horDrag = 0.1;
 
 onGround = true;
 
