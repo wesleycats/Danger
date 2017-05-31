@@ -23,15 +23,6 @@ push = max(keyboard_check_pressed(vk_enter), 0);
 
 if (push == 1)
 {
-    if (roomName == "Menu")
-    {
-        scr_MainMenu_Activate();
-    }
-    
-    if (roomName == "PlanetMenu")
-    {
-        scr_PlanetMenu_Activate();
-    }
-    
+    scr_MainMenu_Activate();
     keyboard_clear(vk_enter);
 }

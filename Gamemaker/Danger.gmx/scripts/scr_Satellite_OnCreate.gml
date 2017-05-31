@@ -1,13 +1,13 @@
 hspCurrent = 0;
 vspCurrent = 0;
-maxHsp = 10;
+maxHsp = 7;
 maxVsp = random_range(0, 5);
 horAcceleration = 2;
 verAcceleration = 3;
 verGravity = 0.5;
 horDrag = 0.5;
 
-flyDir = obj_ObsMan.astFlyDir;
+flyDir = obj_ObsMan.satFlyDir;
 
 rot = 0;
 randRot = random_range(-4, 4);

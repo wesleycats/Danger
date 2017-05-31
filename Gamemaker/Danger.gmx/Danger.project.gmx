@@ -3,6 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="1" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_GameMusic</sound>
@@ -15,14 +16,15 @@
     <sprites name="World">
       <sprite>sprites\spr_Ground</sprite>
       <sprite>sprites\spr_Coin</sprite>
-      <sprite>sprites\spr_Button</sprite>
     </sprites>
     <sprites name="Obstacles">
       <sprite>sprites\spr_Asteroid</sprite>
-      <sprite>sprites\spr_Bird</sprite>
+      <sprite>sprites\spr_WhiteBird</sprite>
+      <sprite>sprites\spr_BrownBird</sprite>
       <sprite>sprites\spr_Satellite</sprite>
       <sprite>sprites\spr_Ufo</sprite>
     </sprites>
+    <sprite>sprites\spr_Selected</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Space</background>
@@ -107,14 +109,6 @@
         </scripts>
       </scripts>
     </scripts>
-    <scripts name="Menu">
-      <script>scripts\scr_Menu_OnCreate.gml</script>
-      <script>scripts\scr_Menu_OnStep.gml</script>
-      <scripts name="Step Functions">
-        <script>scripts\scr_Menu_Tracker.gml</script>
-        <script>scripts\scr_Menu_Select.gml</script>
-      </scripts>
-    </scripts>
     <scripts name="World">
       <scripts name="Coin">
         <script>scripts\scr_Coin_OnCreate.gml</script>
@@ -125,11 +119,28 @@
         </scripts>
       </scripts>
     </scripts>
+    <scripts name="Menu">
+      <script>scripts\scr_Menu_OnCreate.gml</script>
+      <script>scripts\scr_Menu_OnStep.gml</script>
+      <script>scripts\scr_Menu_OnDraw.gml</script>
+      <scripts name="Step Functions">
+        <script>scripts\scr_Menu_Tracker.gml</script>
+        <script>scripts\scr_MainMenu_Activate.gml</script>
+        <script>scripts\scr_PlanetMenu_Activate.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_MainMenu</font>
+    <font>fonts\fnt_Default</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_Player</object>
+    <object>objects\obj_Selected</object>
+    <object>objects\obj_Variables</object>
     <objects name="Obstacles">
       <object>objects\obj_Bird</object>
+      <object>objects\obj_BrownBird</object>
       <object>objects\obj_Satellite</object>
       <object>objects\obj_Asteroid</object>
       <object>objects\obj_Ufo</object>
@@ -144,12 +155,12 @@
     <objects name="World">
       <object>objects\obj_Ground</object>
       <object>objects\obj_Coin</object>
-      <object>objects\Button</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu</room>
     <room>rooms\PlanetMenu</room>
+    <room>rooms\WinMenu</room>
     <rooms name="Planets">
       <room>rooms\Mercurius</room>
       <room>rooms\Venus</room>

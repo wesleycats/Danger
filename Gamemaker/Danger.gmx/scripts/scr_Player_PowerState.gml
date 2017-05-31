@@ -4,13 +4,13 @@ if (newPowerState != currentPowerState)
     {
         case PowerForceState.Increase:
         
-        powerForceCharge = 0.5;
+        powerForceCharge = 0.25;
         
         break;
         
         case PowerForceState.Decrease:
         
-        powerForceCharge = -0.5;
+        powerForceCharge = -0.25;
         
         break;
     }

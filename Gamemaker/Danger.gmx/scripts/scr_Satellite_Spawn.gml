@@ -1,16 +1,16 @@
-if (astFlyDir == 0)
+if (satFlyDir == 0)
 {
     x = 32;
 }
 
-if (astFlyDir == 1)
+if (satFlyDir == 1)
 {
     x = 1888;
 }
 
-y = random_range(minAstHeight, maxAstHeight);
-instance_create(x, y, obj_Asteroid);
+y = random_range(minSatHeight, maxSatHeight);
+instance_create(x, y, obj_Satellite);
 
-astAmount += 1;
+satAmount += 1;
 
 alarm[0] = room_speed * startTime;

@@ -8,3 +8,6 @@ verGravity = 0.5;
 horDrag = 0.5;
 
 flyDir = obj_ObsMan.birdFlyDir;
+xScale = obj_ObsMan.xScale;
+
+image_speed = 0.5;

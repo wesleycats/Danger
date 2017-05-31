@@ -11,10 +11,15 @@ switch (roomName)
     
     scr_Asteroid_Spawn();
     
-    if (ufoSpawnChance > 95)
+    if (ufoSpawnChance > 90)
     {
         scr_Ufo_Spawn();
-    }    
+    }
+    
+    if (satSpawnChance > 95)
+    {
+        scr_Satellite_Spawn();
+    }
     
     break;
     
@@ -27,18 +32,27 @@ switch (roomName)
         scr_Ufo_Spawn();
     }  
     
+    if (satSpawnChance > 90)
+    {
+        scr_Satellite_Spawn();
+    }
+    
     break;
     
     case "Earth":
     
     scr_Asteroid_Spawn();
+    scr_Bird_Spawn();
     
     if (ufoSpawnChance > 95)
     {
         scr_Ufo_Spawn();
     }  
     
-    scr_Bird_Spawn();
+    if (satSpawnChance > 85)
+    {
+        scr_Satellite_Spawn();
+    }
     
     break;
     
@@ -51,6 +65,11 @@ switch (roomName)
         scr_Ufo_Spawn();
     }  
     
+    if (satSpawnChance > 85)
+    {
+        scr_Satellite_Spawn();
+    }
+    
     break;
     
     case "Jupiter":
@@ -61,6 +80,11 @@ switch (roomName)
     {
         scr_Ufo_Spawn();
     }  
+    
+    if (satSpawnChance > 95)
+    {
+        scr_Satellite_Spawn();
+    }
     
     break;
     
@@ -73,6 +97,11 @@ switch (roomName)
         scr_Ufo_Spawn();
     }  
     
+    if (satSpawnChance > 95)
+    {
+        scr_Satellite_Spawn();
+    }
+    
     break;
     
     case "Uranus":
@@ -84,6 +113,11 @@ switch (roomName)
         scr_Ufo_Spawn();
     }  
     
+    if (satSpawnChance > 95)
+    {
+        scr_Satellite_Spawn();
+    }
+    
     break;
     
     case "Neptunus":
@@ -94,6 +128,11 @@ switch (roomName)
     {
         scr_Ufo_Spawn();
     }  
+    
+    if (satSpawnChance > 95)
+    {
+        scr_Satellite_Spawn();
+    }
     
     break;
     

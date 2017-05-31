@@ -8,15 +8,17 @@ maxBirdHeight = 4000;
 
 astAmount = 0;
 astFlyDir = 0;
-minAstHeight = 200;
-maxAstHeight = 400;
+minAstHeight = 100;
+maxAstHeight = 300;
 
 ufoAmount = 0;
 ufoFlyDir = 0;
 minUfoHeight = 1000;
-maxUfoHeight = 4000;
+maxUfoHeight = 3300;
 
 satAmount = 0;
 satFlyDir = 0;
-minSatHeight = 1000;
-maxSatHeight = 3000;
+minSatHeight = 400;
+maxSatHeight = 1500;
+
+xScale = 1;

@@ -82,6 +82,8 @@ switch (roomName)
     break;
 }
 
+prevGravity = verGravity;
+prevMaxVsp = maxVsp;
 horDrag = 0.1;
 verAcceleration = 7;
 horAcceleration = 1;
