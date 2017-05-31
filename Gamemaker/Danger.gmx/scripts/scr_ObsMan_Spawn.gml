@@ -21,6 +21,11 @@ switch (roomName)
         scr_Satellite_Spawn();
     }
     
+    if (debSpawnChance > 95)
+    {
+        scr_Debris_Spawn();
+    }
+    
     break;
     
     case "Venus":
@@ -35,6 +40,11 @@ switch (roomName)
     if (satSpawnChance > 90)
     {
         scr_Satellite_Spawn();
+    }
+    
+    if (debSpawnChance > 95)
+    {
+        scr_Debris_Spawn();
     }
     
     break;
@@ -54,6 +64,11 @@ switch (roomName)
         scr_Satellite_Spawn();
     }
     
+    if (debSpawnChance > 10)
+    {
+        scr_Debris_Spawn();
+    }
+    
     break;
     
     case "Mars":
@@ -68,6 +83,11 @@ switch (roomName)
     if (satSpawnChance > 85)
     {
         scr_Satellite_Spawn();
+    }
+    
+    if (debSpawnChance > 95)
+    {
+        scr_Debris_Spawn();
     }
     
     break;
@@ -86,6 +106,11 @@ switch (roomName)
         scr_Satellite_Spawn();
     }
     
+    if (debSpawnChance > 95)
+    {
+        scr_Debris_Spawn();
+    }
+    
     break;
     
     case "Saturnus":
@@ -100,6 +125,11 @@ switch (roomName)
     if (satSpawnChance > 95)
     {
         scr_Satellite_Spawn();
+    }
+    
+    if (debSpawnChance > 95)
+    {
+        scr_Debris_Spawn();
     }
     
     break;
@@ -118,6 +148,11 @@ switch (roomName)
         scr_Satellite_Spawn();
     }
     
+    if (debSpawnChance > 95)
+    {
+        scr_Debris_Spawn();
+    }
+    
     break;
     
     case "Neptunus":
@@ -132,6 +167,11 @@ switch (roomName)
     if (satSpawnChance > 95)
     {
         scr_Satellite_Spawn();
+    }
+    
+    if (debSpawnChance > 95)
+    {
+        scr_Debris_Spawn();
     }
     
     break;
