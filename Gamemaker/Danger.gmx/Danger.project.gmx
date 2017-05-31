@@ -23,12 +23,20 @@
       <sprite>sprites\spr_BrownBird</sprite>
       <sprite>sprites\spr_Satellite</sprite>
       <sprite>sprites\spr_Ufo</sprite>
+      <sprite>sprites\spr_Debris</sprite>
     </sprites>
     <sprite>sprites\spr_Selected</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Space</background>
+    <background>background\bg_Mercurius</background>
+    <background>background\bg_Venus</background>
     <background>background\bg_Earth</background>
+    <background>background\bg_Mars</background>
+    <background>background\bg_Jupiter</background>
+    <background>background\bg_Saturnus</background>
+    <background>background\bg_Uranus</background>
+    <background>background\bg_Neptunus</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -98,6 +106,16 @@
           <script>scripts\scr_Satellite_Spawn.gml</script>
         </scripts>
       </scripts>
+      <scripts name="Debris">
+        <script>scripts\scr_Debris_OnCreate.gml</script>
+        <script>scripts\scr_Debris_OnStep.gml</script>
+        <script>scripts\scr_Debris_OnDraw.gml</script>
+        <scripts name="Step Functions">
+          <script>scripts\scr_Debris_Movement.gml</script>
+          <script>scripts\scr_Debris_Collision.gml</script>
+          <script>scripts\scr_Debris_Spawn.gml</script>
+        </scripts>
+      </scripts>
       <scripts name="Ufo">
         <script>scripts\scr_Ufo_OnCreate.gml</script>
         <script>scripts\scr_Ufo_OnStep.gml</script>
@@ -142,6 +160,7 @@
       <object>objects\obj_Bird</object>
       <object>objects\obj_BrownBird</object>
       <object>objects\obj_Satellite</object>
+      <object>objects\obj_Debris</object>
       <object>objects\obj_Asteroid</object>
       <object>objects\obj_Ufo</object>
     </objects>

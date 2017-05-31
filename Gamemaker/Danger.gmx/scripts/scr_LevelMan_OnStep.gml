@@ -61,7 +61,7 @@ if (keyboard_check_pressed(ord("P")))
 {
     global.Pause = !global.Pause;
     
-    if (global.Pause)
+    if (!global.Pause)
     {
        audio_pause_all();
     }

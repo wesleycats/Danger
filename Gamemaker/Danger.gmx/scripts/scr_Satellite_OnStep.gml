@@ -1,5 +1,5 @@
-scr_Asteroid_Movement();
-scr_Asteroid_Collision();
+scr_Satellite_Movement();
+scr_Satellite_Collision();
 
 x += hspCurrent;
 
