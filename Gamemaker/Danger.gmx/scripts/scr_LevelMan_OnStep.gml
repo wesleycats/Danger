@@ -57,4 +57,16 @@ if (keyboard_check_pressed(vk_f10))
     room_goto(9);
 }
 
-
+if (keyboard_check_pressed(ord("P")))
+{
+    global.Pause = !global.Pause;
+    
+    if (global.Pause)
+    {
+       audio_pause_all();
+    }
+    else
+    {
+       audio_resume_all();
+    }
+}

@@ -1,56 +1,37 @@
-switch(selected)
+var move = 0;
+move -= max(keyboard_check_pressed(vk_up), keyboard_check_pressed(ord("W")), 0);
+move += max(keyboard_check_pressed(vk_down), keyboard_check_pressed(ord("S")), 0);
+
+if (move != 0)
 {
-    case 1:
-        image_index = 0;
-        
-        if (keyboard_check_pressed(vk_enter))
-        {
-            instance_create(x, y, obj_Fade);
-        }
-        
-        break;
-        
-    case 2:
-        image_index = 1;
-        
-        if (keyboard_check_pressed(vk_enter))
-        {
-        
-        }
-        
-        break;
-        
-    case 3:
-        image_index = 2;
-        
-        if (keyboard_check_pressed(vk_enter))
-        {
-        
-        }
-        
-        break;
-        
-    case 4: 
-        image_index = 3;
-        
-        if (keyboard_check_pressed(vk_enter))
-        {
-            game_end();
-        }
-        
-        break;
-        
-    default:
-        
-        break;
+    mPos += move;
+    
+    if (mPos < 0)
+    {
+        mPos = array_length_1d(menu) - 1;
+    }
+    
+    if (mPos > array_length_1d(menu) - 1)
+    {
+        mPos = 0;
+    }
+    
 }
 
-/*
-if(selected == 1){
-   image_index = 1; 
+var push = 0;
+push = max(keyboard_check_pressed(vk_enter), 0);
 
+if (push == 1)
+{
+    if (roomName == "Menu")
+    {
+        scr_MainMenu_Activate();
+    }
+    
+    if (roomName == "PlanetMenu")
+    {
+        scr_PlanetMenu_Activate();
+    }
+    
+    keyboard_clear(vk_enter);
 }
-else{
-   image_index = 0;
-}
-*/
