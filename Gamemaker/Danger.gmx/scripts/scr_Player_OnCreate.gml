@@ -1,7 +1,7 @@
 roomName = room_get_name(room);
 
-x = room_width / 2;
-y = room_height - sprite_height;
+x = 960;
+y = 4512;
 
 vspCurrent = 0;
 hspCurrent = 0;
@@ -107,3 +107,5 @@ image_angle = 90;
 
 currentPowerState = PowerForceState.None;
 newPowerState = PowerForceState.Increase;
+
+crash = false;

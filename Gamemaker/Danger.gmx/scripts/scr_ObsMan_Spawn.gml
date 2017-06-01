@@ -64,7 +64,7 @@ switch (roomName)
         scr_Satellite_Spawn();
     }
     
-    if (debSpawnChance > 10)
+    if (debSpawnChance > 95)
     {
         scr_Debris_Spawn();
     }

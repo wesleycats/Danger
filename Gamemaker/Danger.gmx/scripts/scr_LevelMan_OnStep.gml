@@ -3,6 +3,11 @@ if (keyboard_check_pressed(ord('Q')))
     room_restart();
 }
 
+if (keyboard_check_pressed(ord('R')))
+{
+    game_restart();
+}
+
 if (keyboard_check_pressed(vk_escape))
 {
     game_end();
@@ -55,6 +60,11 @@ if (keyboard_check_pressed(vk_f9))
 if (keyboard_check_pressed(vk_f10))
 {
     room_goto(9);
+}
+
+if (keyboard_check_pressed(vk_f11))
+{
+    room_goto(10);
 }
 
 if (keyboard_check_pressed(ord("P")))

@@ -53,6 +53,7 @@
         <script>scripts\scr_Player_TakeOffPower.gml</script>
         <script>scripts\scr_Player_PowerState.gml</script>
         <script>scripts\scr_Player_TakeOff.gml</script>
+        <script>scripts\scr_Player_Reset.gml</script>
       </scripts>
       <scripts name="Camera">
         <script>scripts\scr_Camera_OnStep.gml</script>
@@ -74,6 +75,12 @@
         <script>scripts\scr_LevelMan_OnCreate.gml</script>
         <script>scripts\scr_LevelMan_OnStep.gml</script>
       </scripts>
+      <scripts name="Planet Info">
+        <script>scripts\scr_Info_OnCreate.gml</script>
+        <script>scripts\scr_Info_OnStep.gml</script>
+        <script>scripts\scr_Info_OnDraw.gml</script>
+      </scripts>
+      <script>scripts\scr_Manager_GUI.gml</script>
     </scripts>
     <scripts name="Obstacles">
       <scripts name="Asteroid">
@@ -170,6 +177,8 @@
       <object>objects\obj_ObsMan</object>
       <object>objects\obj_LevelMan</object>
       <object>objects\obj_Fade</object>
+      <object>objects\obj_Info</object>
+      <object>objects\obj_GUI</object>
     </objects>
     <objects name="World">
       <object>objects\obj_Ground</object>
@@ -189,6 +198,16 @@
       <room>rooms\Saturnus</room>
       <room>rooms\Uranus</room>
       <room>rooms\Neptunus</room>
+    </rooms>
+    <rooms name="Planet Info">
+      <room>rooms\Merc_Info</room>
+      <room>rooms\Venus_Info</room>
+      <room>rooms\Earth_Info</room>
+      <room>rooms\Mars_Info</room>
+      <room>rooms\Jupi_Info</room>
+      <room>rooms\Satu_Info</room>
+      <room>rooms\Uran_Info</room>
+      <room>rooms\Nept_Info</room>
     </rooms>
   </rooms>
   <help>

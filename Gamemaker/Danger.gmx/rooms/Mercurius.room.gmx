@@ -76,6 +76,7 @@
     <instance objName="obj_Coin" x="1536" y="256" name="inst_6597625B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Coin" x="512" y="288" name="inst_49D0E078" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Coin" x="704" y="1056" name="inst_B61D0C15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_GUI" x="0" y="0" name="inst_0EC9AA94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

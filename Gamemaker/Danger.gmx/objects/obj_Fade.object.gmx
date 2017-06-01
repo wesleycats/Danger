@@ -56,14 +56,79 @@ if (a == 1)
     var roomName = room_get_name(room);
     var varia = instance_find(obj_Variables, 1);
     
-    if (roomName != "Menu" &amp;&amp; roomName != "PlanetMenu")
-    {
-        room_goto(PlanetMenu);
-    }
-    
     if (roomName == "Menu")
     {
-        room_goto(Earth);
+        room_goto(Earth_Info);
+    }
+
+    
+    if (roomName != "Menu" &amp;&amp; roomName != "PlanetMenu")
+    {
+        switch (roomName)
+        {
+            case "Merc_Info":
+            
+            room_goto(Mercurius);
+            varia.playerLives = varia.startPlayerLives;
+            
+            break;
+            
+            case "Venus_Info":
+            
+            room_goto(Venus);
+            varia.playerLives = varia.startPlayerLives;
+            
+            break;
+            
+            case "Earth_Info":
+            
+            room_goto(Earth);
+            varia.playerLives = varia.startPlayerLives;
+            
+            break;
+            
+            case "Mars_Info":
+            
+            room_goto(Mars);
+            varia.playerLives = varia.startPlayerLives;
+            
+            break;
+            
+            case "Jupi_Info":
+            
+            room_goto(Jupiter);
+            varia.playerLives = varia.startPlayerLives;
+            
+            break;
+            
+            case "Satu_Info":
+            
+            room_goto(Saturnus);
+            varia.playerLives = varia.startPlayerLives;
+            
+            break;
+            
+            case "Uran_Info":
+            
+            room_goto(Uranus);
+            varia.playerLives = varia.startPlayerLives;
+            
+            break;
+            
+            case "Nept_Info":
+            
+            room_goto(Neptunus);
+            varia.playerLives = varia.startPlayerLives;
+            
+            break;
+            
+            default:
+            
+            room_goto(PlanetMenu);
+            varia.playerLives = varia.startPlayerLives;
+            
+            break;
+        }
     }
 
     if (roomName == "PlanetMenu")
@@ -74,7 +139,7 @@ if (a == 1)
             
             if (varia.plan1)
             {
-                room_goto(Mercurius);
+                room_goto(Merc_Info);
                 varia.plan1 = false;
                 varia.planetsLeft -= 1;
             }
@@ -85,7 +150,7 @@ if (a == 1)
             
             if (varia.plan2)
             {
-                room_goto(Venus);
+                room_goto(Venus_Info);
                 varia.plan2 = false;
                 varia.planetsLeft -= 1;
             }
@@ -96,7 +161,7 @@ if (a == 1)
             
             if (varia.plan3)
             {
-                room_goto(Mars);   
+                room_goto(Mars_Info);   
                 varia.plan3 = false;
                 varia.planetsLeft -= 1;
             }
@@ -107,7 +172,7 @@ if (a == 1)
             
             if (varia.plan4)
             {
-                room_goto(Jupiter);    
+                room_goto(Jupi_Info);    
                 varia.plan4 = false;
                 varia.planetsLeft -= 1;
             }
@@ -119,7 +184,7 @@ if (a == 1)
             
             if (varia.plan5)
             {
-                room_goto(Saturnus);
+                room_goto(Satu_Info);
                 varia.plan5 = false;
                 varia.planetsLeft -= 1;
             }
@@ -131,7 +196,7 @@ if (a == 1)
             
             if (varia.plan6)
             {
-                room_goto(Uranus);
+                room_goto(Uran_Info);
                 varia.plan6 = false;
                 varia.planetsLeft -= 1;
             }
@@ -143,7 +208,7 @@ if (a == 1)
             
             if (varia.plan7)
             {
-                room_goto(Neptunus);
+                room_goto(Nept_Info);
                 varia.plan7 = false;
                 varia.planetsLeft -= 1;
             }

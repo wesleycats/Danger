@@ -6,5 +6,5 @@ if (x <= 0 || x >= room_width)
 
 if (place_meeting(x, y, obj_Player))
 {
-    room_restart();
+   scr_Player_Reset();
 }
