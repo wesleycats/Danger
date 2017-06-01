@@ -1,11 +1,11 @@
 draw_set_halign(fa_middle);
 draw_set_valign(fa_middle);
-draw_set_font(fnt_MainMenu);
+draw_set_font(fnt_Pixel);
 draw_set_color(c_red);
 
 if (roomName == "Menu")
 {
-    draw_text_transformed(room_width / 2, 100, "Danger", 3, 3, 0);
+    //draw_text_transformed(room_width / 2, 100, "Danger", 3, 3, 0);
 }
 
 var m;

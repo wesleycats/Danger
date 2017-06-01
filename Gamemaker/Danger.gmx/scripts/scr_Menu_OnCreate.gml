@@ -3,10 +3,10 @@ varia = instance_find(obj_Variables, 1);
 
 if (roomName == "Menu")
 {
-    menu[0] = "Start";
-    menu[1] = "Credits";
-    menu[2] = "Controls";
-    menu[3] = "Quit";
+    menu[0] = "Speel";
+    menu[1] = "Bediening";
+    menu[2] = "Credits";
+    menu[3] = "Afsluiten";
 }
 
 if (roomName == "PlanetMenu")

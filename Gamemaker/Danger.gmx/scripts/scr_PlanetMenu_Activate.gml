@@ -4,7 +4,11 @@ switch (mPos)
     {
         varia.newPlanet = "Mercurius";
         varia.planet1 = "DONE";
-        instance_create(x, y, obj_Fade);
+         
+        if (!instance_exists(obj_Fade))
+        {
+            instance_create(x, y, obj_Fade);
+        }
         
         break;    
     }    
@@ -13,7 +17,11 @@ switch (mPos)
     {
         varia.newPlanet = "Venus";
         varia.planet2 = "DONE";
-        instance_create(x, y, obj_Fade);
+
+        if (!instance_exists(obj_Fade))
+        {
+            instance_create(x, y, obj_Fade);
+        }
         
         break;
     }
@@ -22,7 +30,11 @@ switch (mPos)
     {
         varia.newPlanet = "Mars";
         varia.planet3 = "DONE";
-        instance_create(x, y, obj_Fade);
+        
+        if (!instance_exists(obj_Fade))
+        {
+            instance_create(x, y, obj_Fade);
+        }
         
         break;
     }
@@ -31,7 +43,11 @@ switch (mPos)
     {
         varia.newPlanet = "Jupiter";  
         varia.planet4 = "DONE";
-        instance_create(x, y, obj_Fade);
+        
+        if (!instance_exists(obj_Fade))
+        {
+            instance_create(x, y, obj_Fade);
+        }
         
         break;
     }
@@ -40,16 +56,24 @@ switch (mPos)
     {
         varia.newPlanet = "Saturnus";
         varia.planet5 = "DONE";
-        instance_create(x, y, obj_Fade);
+
+        if (!instance_exists(obj_Fade))
+        {
+            instance_create(x, y, obj_Fade);
+        }
         
         break;
     }
     
     case 5:
     {
-        varia.newPlanet = "Uranus";  
+        varia.newPlanet = "Uranus"; 
         varia.planet6 = "DONE";
-        instance_create(x, y, obj_Fade);
+        
+        if (!instance_exists(obj_Fade))
+        {
+            instance_create(x, y, obj_Fade);
+        }
         
         break;
     }
@@ -58,7 +82,11 @@ switch (mPos)
     {
         varia.newPlanet = "Neptunus";  
         varia.planet7 = "DONE";
-        instance_create(x, y, obj_Fade);
+   
+        if (!instance_exists(obj_Fade))
+        {
+            instance_create(x, y, obj_Fade);
+        }
         
         break;
     }

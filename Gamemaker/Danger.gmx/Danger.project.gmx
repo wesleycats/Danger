@@ -35,17 +35,27 @@
       <sprite>sprites\spr_Debris</sprite>
     </sprites>
     <sprite>sprites\spr_Selected</sprite>
+    <sprite>sprites\spr_WinMenuScreen</sprite>
   </sprites>
   <backgrounds name="background">
+    <background>background\bg_WallPaper</background>
     <background>background\bg_Space</background>
-    <background>background\bg_Mercurius</background>
-    <background>background\bg_Venus</background>
-    <background>background\bg_Earth</background>
-    <background>background\bg_Mars</background>
-    <background>background\bg_Jupiter</background>
-    <background>background\bg_Saturnus</background>
-    <background>background\bg_Uranus</background>
-    <background>background\bg_Neptunus</background>
+    <backgrounds name="Planets">
+      <background>background\bg_Mercurius</background>
+      <background>background\bg_Venus</background>
+      <background>background\bg_Earth</background>
+      <background>background\bg_Mars</background>
+      <background>background\bg_Jupiter</background>
+      <background>background\bg_Saturnus</background>
+      <background>background\bg_Uranus</background>
+      <background>background\bg_Neptunus</background>
+    </backgrounds>
+    <backgrounds name="Menu">
+      <background>background\bg_MainMenu</background>
+      <background>background\bg_Credits</background>
+      <background>background\bg_Controls</background>
+      <background>background\bg_WinScreen</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -90,6 +100,7 @@
         <script>scripts\scr_Info_OnDraw.gml</script>
       </scripts>
       <script>scripts\scr_Manager_GUI.gml</script>
+      <script>scripts\scr_WinScreen_OnDraw.gml</script>
     </scripts>
     <scripts name="Obstacles">
       <scripts name="Asteroid">
@@ -168,6 +179,7 @@
   <fonts name="fonts">
     <font>fonts\fnt_MainMenu</font>
     <font>fonts\fnt_Default</font>
+    <font>fonts\fnt_Pixel</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_Player</object>
@@ -189,6 +201,7 @@
       <object>objects\obj_Fade</object>
       <object>objects\obj_Info</object>
       <object>objects\obj_GUI</object>
+      <object>objects\obj_Win</object>
     </objects>
     <objects name="World">
       <object>objects\obj_Ground</object>
@@ -202,12 +215,12 @@
         <object>objects\obj_Plan6</object>
         <object>objects\obj_Plan7</object>
       </objects>
+      <object>objects\obj_WinMenuScreen</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu</room>
     <room>rooms\PlanetMenu</room>
-    <room>rooms\WinMenu</room>
     <rooms name="Planets">
       <room>rooms\Mercurius</room>
       <room>rooms\Venus</room>
@@ -218,6 +231,7 @@
       <room>rooms\Uranus</room>
       <room>rooms\Neptunus</room>
     </rooms>
+    <room>rooms\WinMenu</room>
     <rooms name="Planet Info">
       <room>rooms\Merc_Info</room>
       <room>rooms\Venus_Info</room>
@@ -228,6 +242,8 @@
       <room>rooms\Uran_Info</room>
       <room>rooms\Nept_Info</room>
     </rooms>
+    <room>rooms\Credits</room>
+    <room>rooms\Controls</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

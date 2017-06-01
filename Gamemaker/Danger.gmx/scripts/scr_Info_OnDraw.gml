@@ -1,5 +1,7 @@
 var varia = instance_find(obj_Variables, 1);
 
+draw_set_font(fnt_Pixel);
+
 switch (varia.newPlanet)
 {
     case "Mercurius":

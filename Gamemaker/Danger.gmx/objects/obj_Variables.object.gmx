@@ -44,8 +44,9 @@ plan7 = true;
 plan8 = true;
 
 newPlanet = "";
+currentPlanet = "";
 
-planetsLeft = 7;
+planetsLeft = 8;
 
 coinsCollected = 0;
 
@@ -84,7 +85,7 @@ if (planetsLeft &lt; 1)
 // Tracks player lives
 if (playerLives &lt; 1)
 {
-    room_goto(Menu);
+    game_restart();
 }
 </string>
           </argument>

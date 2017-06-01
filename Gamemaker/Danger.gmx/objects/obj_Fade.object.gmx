@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-99999999</depth>
+  <depth>-99999</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -58,79 +58,172 @@ if (a == 1)
     
     if (roomName == "Menu")
     {
-        room_goto(Earth_Info);
-    }
-
-    
-    if (roomName != "Menu" &amp;&amp; roomName != "PlanetMenu")
-    {
-        switch (roomName)
+        switch (varia.newPlanet)
         {
-            case "Merc_Info":
+            case "Earth":
             
-            room_goto(Mercurius);
-            varia.playerLives = varia.startPlayerLives;
+            room_goto(Earth_Info);
             
             break;
             
-            case "Venus_Info":
+            case "Mercurius":
+    
+            room_goto(Mercurius);
+    
+            break;
+            
+            case "Venus":
             
             room_goto(Venus);
-            varia.playerLives = varia.startPlayerLives;
             
             break;
             
-            case "Earth_Info":
-            
-            room_goto(Earth);
-            varia.playerLives = varia.startPlayerLives;
-            
-            break;
-            
-            case "Mars_Info":
+            case "Mars":
             
             room_goto(Mars);
-            varia.playerLives = varia.startPlayerLives;
-            
+        
             break;
             
-            case "Jupi_Info":
+            case "Jupiter":
             
             room_goto(Jupiter);
-            varia.playerLives = varia.startPlayerLives;
             
             break;
             
-            case "Satu_Info":
+            case "Saturnus":
             
             room_goto(Saturnus);
-            varia.playerLives = varia.startPlayerLives;
             
             break;
             
-            case "Uran_Info":
+            case "Uranus":
             
             room_goto(Uranus);
-            varia.playerLives = varia.startPlayerLives;
             
             break;
             
-            case "Nept_Info":
+            case "Neptunus":
             
             room_goto(Neptunus);
-            varia.playerLives = varia.startPlayerLives;
             
             break;
             
-            default:
+            case "Credits":
             
-            room_goto(PlanetMenu);
+            room_goto(Credits);
+            
+            break;
+            
+            case "Controls":
+            
+            room_goto(Controls);
+            
+            break;
+            
+            case "MainMenu":
+            
+            room_goto(Menu);
             varia.playerLives = varia.startPlayerLives;
             
             break;
         }
     }
-
+    
+    if (roomName != "Menu" &amp;&amp; roomName != "PlanetMenu" &amp;&amp; roomName != "Credits" &amp;&amp; roomName != "Controls" &amp;&amp; roomName != "WinMenu")
+    {          
+            switch (roomName)
+            {
+                case "Merc_Info":
+                
+                room_goto(Mercurius);
+                varia.playerLives = varia.startPlayerLives;
+                varia.currentPlanet = "Mercurius";
+                
+                break;
+                
+                case "Venus_Info":
+                
+                room_goto(Venus);
+                varia.playerLives = varia.startPlayerLives;
+                varia.currentPlanet = "Venus";
+                
+                break;
+                
+                case "Earth_Info":
+                
+                room_goto(Earth);
+                varia.playerLives = varia.startPlayerLives;
+                varia.currentPlanet = "Earth";
+                
+                break;
+                
+                case "Mars_Info":
+                
+                room_goto(Mars);
+                varia.playerLives = varia.startPlayerLives;
+                varia.currentPlanet = "Mars";
+                
+                break;
+                
+                case "Jupi_Info":
+                
+                room_goto(Jupiter);
+                varia.playerLives = varia.startPlayerLives;
+                varia.currentPlanet = "Jupiter";
+                
+                break;
+                
+                case "Satu_Info":
+                
+                room_goto(Saturnus);
+                varia.playerLives = varia.startPlayerLives;
+                varia.currentPlanet = "Saturnus";
+                
+                break;
+                
+                case "Uran_Info":
+                
+                room_goto(Uranus);
+                varia.playerLives = varia.startPlayerLives;
+                varia.currentPlanet = "Uranus";
+                
+                break;
+                
+                case "Nept_Info":
+                
+                room_goto(Neptunus);
+                varia.playerLives = varia.startPlayerLives;
+                varia.currentPlanet = "Neptunus";
+                
+                break;
+                
+                default:
+                
+                room_goto(PlanetMenu);
+                varia.playerLives = varia.startPlayerLives;
+                varia.newPlanet = "PlanetMenu";
+                varia.currentPlanet = varia.newPlanet;
+                varia.planetsLeft -= 1;
+                
+                break;
+            }  
+            
+        if (varia.planetsLeft &lt; 1)
+        {
+            room_goto(WinMenu);
+            varia.newPlanet = "Finished";
+            varia.currentPlanet = varia.newPlanet;
+        }
+    }          
+                
+    if (obj_LevelMan.mainMenu)
+    {
+        varia.newPlanet = room_get_name(room);
+        varia.currentPlanet = varia.newPlanet;
+        room_goto(Menu);
+        obj_LevelMan.mainMenu = false;
+    }
+    
     if (roomName == "PlanetMenu")
     {
         switch (varia.newPlanet)
@@ -141,7 +234,7 @@ if (a == 1)
             {
                 room_goto(Merc_Info);
                 varia.plan1 = false;
-                varia.planetsLeft -= 1;
+                
             }
             
             break;
@@ -152,7 +245,7 @@ if (a == 1)
             {
                 room_goto(Venus_Info);
                 varia.plan2 = false;
-                varia.planetsLeft -= 1;
+                
             }
             
             break;
@@ -163,7 +256,7 @@ if (a == 1)
             {
                 room_goto(Mars_Info);   
                 varia.plan3 = false;
-                varia.planetsLeft -= 1;
+                
             }
         
             break;
@@ -174,7 +267,7 @@ if (a == 1)
             {
                 room_goto(Jupi_Info);    
                 varia.plan4 = false;
-                varia.planetsLeft -= 1;
+                
             }
         
             
@@ -186,7 +279,7 @@ if (a == 1)
             {
                 room_goto(Satu_Info);
                 varia.plan5 = false;
-                varia.planetsLeft -= 1;
+                
             }
             
             
@@ -198,7 +291,7 @@ if (a == 1)
             {
                 room_goto(Uran_Info);
                 varia.plan6 = false;
-                varia.planetsLeft -= 1;
+                
             }
             
             
@@ -210,8 +303,16 @@ if (a == 1)
             {
                 room_goto(Nept_Info);
                 varia.plan7 = false;
-                varia.planetsLeft -= 1;
+                
             }
+            
+            break;
+            
+            case "MainMenu":
+            
+            room_goto(Menu);
+            varia.playerLives = varia.startPlayerLives;
+            varia.newPlanet = varia.currentPlanet;
             
             break;
             

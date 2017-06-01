@@ -1,4 +1,3 @@
-
 if(room_get_name(room) == "PlanetMenu")
 {
     var varia = instance_find(obj_Variables, 1);

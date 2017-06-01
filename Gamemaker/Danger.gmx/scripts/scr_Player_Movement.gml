@@ -74,13 +74,13 @@ if (instance_exists(obj_TakeOff))
         sprite_index = spr_Player;
     }
     
-    if (keyboard_check(ord('D')))
+    if (keyboard_check(ord('D')) || keyboard_check(vk_right))
     {
         image_angle -= 3;
         rot -= 3;
     }
     
-    if (keyboard_check(ord('A')))
+    if (keyboard_check(ord('A')) || keyboard_check(vk_left))
     {
         image_angle += 3;
         rot = image_angle - 90;
