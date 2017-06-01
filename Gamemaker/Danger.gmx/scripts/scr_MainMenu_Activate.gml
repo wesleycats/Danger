@@ -21,7 +21,7 @@ switch (mPos)
     
     case 1:
     
-    obj_Variables.newPlanet = "Controls";
+    varia.cont = true;
     
     if (!instance_exists(obj_Fade))
     {
@@ -32,7 +32,7 @@ switch (mPos)
     
     case 2:
     
-    obj_Variables.newPlanet = "Credits";
+    varia.cred = true;
     
     if (!instance_exists(obj_Fade))
     {
@@ -43,7 +43,19 @@ switch (mPos)
     
     case 3:
     
+    varia.high = true;
+    
+    if (!instance_exists(obj_Fade))
+    {
+        instance_create(x, y, obj_Fade);
+    }
+    
+    break;
+    
+    case 4:
+    
     game_end();
+    
     break;
     
     default:    break;

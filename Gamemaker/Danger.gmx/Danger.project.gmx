@@ -12,6 +12,7 @@
     <sprites name="Player">
       <sprite>sprites\spr_Player</sprite>
       <sprite>sprites\spr_PlayerFly</sprite>
+      <sprite>sprites\spr_PlayerTakeOff</sprite>
     </sprites>
     <sprites name="World">
       <sprite>sprites\spr_Ground</sprite>
@@ -34,6 +35,9 @@
       <sprite>sprites\spr_Ufo</sprite>
       <sprite>sprites\spr_Debris</sprite>
     </sprites>
+    <sprites name="Textbox">
+      <sprite>sprites\spr_TextBox</sprite>
+    </sprites>
     <sprite>sprites\spr_Selected</sprite>
     <sprite>sprites\spr_WinMenuScreen</sprite>
   </sprites>
@@ -54,6 +58,7 @@
       <background>background\bg_MainMenu</background>
       <background>background\bg_Credits</background>
       <background>background\bg_Controls</background>
+      <background>background\bg_Highscore</background>
       <background>background\bg_WinScreen</background>
     </backgrounds>
   </backgrounds>
@@ -100,7 +105,6 @@
         <script>scripts\scr_Info_OnDraw.gml</script>
       </scripts>
       <script>scripts\scr_Manager_GUI.gml</script>
-      <script>scripts\scr_WinScreen_OnDraw.gml</script>
     </scripts>
     <scripts name="Obstacles">
       <scripts name="Asteroid">
@@ -165,15 +169,31 @@
       </scripts>
     </scripts>
     <scripts name="Menu">
-      <script>scripts\scr_Menu_OnCreate.gml</script>
-      <script>scripts\scr_Menu_OnStep.gml</script>
-      <script>scripts\scr_Menu_OnDraw.gml</script>
-      <scripts name="Step Functions">
-        <script>scripts\scr_Menu_Tracker.gml</script>
-        <script>scripts\scr_MainMenu_Activate.gml</script>
-        <script>scripts\scr_PlanetMenu_Activate.gml</script>
+      <scripts name="Menu">
+        <script>scripts\scr_Menu_OnCreate.gml</script>
+        <script>scripts\scr_Menu_OnStep.gml</script>
+        <script>scripts\scr_Menu_OnDraw.gml</script>
+        <script>scripts\scr_PlanMenu_OnDraw.gml</script>
+        <scripts name="Step Functions">
+          <script>scripts\scr_Menu_Tracker.gml</script>
+          <script>scripts\scr_MainMenu_Activate.gml</script>
+          <script>scripts\scr_PlanetMenu_Activate.gml</script>
+        </scripts>
       </scripts>
-      <script>scripts\scr_PlanMenu_OnDraw.gml</script>
+      <scripts name="WinMenu">
+        <scripts name="Text">
+          <script>scripts\scr_Text_OnCreate.gml</script>
+          <script>scripts\scr_Text_OnStep.gml</script>
+          <script>scripts\scr_Text_OnDraw.gml</script>
+        </scripts>
+        <scripts name="TextBox">
+          <script>scripts\scr_TextBox_OnCreate.gml</script>
+          <script>scripts\scr_TextBox_OnStep.gml</script>
+          <script>scripts\scr_TextBox_OnDraw.gml</script>
+        </scripts>
+        <script>scripts\scr_WinMenu_CheckScore.gml</script>
+        <script>scripts\scr_WinMenu_SetScore.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -206,6 +226,7 @@
     <objects name="World">
       <object>objects\obj_Ground</object>
       <object>objects\obj_Coin</object>
+      <object>objects\obj_WinMenuScreen</object>
       <objects name="Planets">
         <object>objects\obj_Plan1</object>
         <object>objects\obj_Plan2</object>
@@ -215,7 +236,10 @@
         <object>objects\obj_Plan6</object>
         <object>objects\obj_Plan7</object>
       </objects>
-      <object>objects\obj_WinMenuScreen</object>
+    </objects>
+    <objects name="TextBox">
+      <object>objects\obj_Text</object>
+      <object>objects\obj_TextBox</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -244,6 +268,7 @@
     </rooms>
     <room>rooms\Credits</room>
     <room>rooms\Controls</room>
+    <room>rooms\Highscore</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

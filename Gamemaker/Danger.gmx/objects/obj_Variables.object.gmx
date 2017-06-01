@@ -50,8 +50,14 @@ planetsLeft = 8;
 
 coinsCollected = 0;
 
+name = "None";
+
 startPlayerLives = 10;
 playerLives = 10;
+
+cont = false;
+cred = false;
+high = false;
 
 </string>
           </argument>

@@ -3,7 +3,7 @@ if (keyboard_check_pressed(ord('C')))
     show_message("Current: " + string(varia.currentPlanet));
     show_message("New: " + string(varia.newPlanet));
     show_message("Room: " + string(room_get_name(room)));
-    show_message("Main: " + string(mainMenu));
+    show_message("Planets left: " + string(varia.planetsLeft));
 }
 
 if (keyboard_check_pressed(ord('X')))
@@ -27,8 +27,6 @@ if (keyboard_check_pressed(vk_escape))
     if (room_get_name(room) != "Menu")
     {
         mainMenu = true;
-        varia.newPlanet = "MainMenu";
-        varia.currentPlanet = varia.newPlanet;
     }
     
     if (varia.planetsLeft < 1)

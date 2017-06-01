@@ -6,7 +6,8 @@ if (roomName == "Menu")
     menu[0] = "Speel";
     menu[1] = "Bediening";
     menu[2] = "Credits";
-    menu[3] = "Afsluiten";
+    menu[3] = "Highscore";
+    menu[4] = "Afsluiten";
 }
 
 if (roomName == "PlanetMenu")
