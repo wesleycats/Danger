@@ -16,6 +16,15 @@
     <sprites name="World">
       <sprite>sprites\spr_Ground</sprite>
       <sprite>sprites\spr_Coin</sprite>
+      <sprites name="Planets">
+        <sprite>sprites\spr_Plan1</sprite>
+        <sprite>sprites\spr_Plan2</sprite>
+        <sprite>sprites\spr_Plan3</sprite>
+        <sprite>sprites\spr_Plan4</sprite>
+        <sprite>sprites\spr_Plan5</sprite>
+        <sprite>sprites\spr_Plan6</sprite>
+        <sprite>sprites\spr_Plan7</sprite>
+      </sprites>
     </sprites>
     <sprites name="Obstacles">
       <sprite>sprites\spr_Asteroid</sprite>
@@ -153,6 +162,7 @@
         <script>scripts\scr_MainMenu_Activate.gml</script>
         <script>scripts\scr_PlanetMenu_Activate.gml</script>
       </scripts>
+      <script>scripts\scr_PlanMenu_OnDraw.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -183,6 +193,15 @@
     <objects name="World">
       <object>objects\obj_Ground</object>
       <object>objects\obj_Coin</object>
+      <objects name="Planets">
+        <object>objects\obj_Plan1</object>
+        <object>objects\obj_Plan2</object>
+        <object>objects\obj_Plan3</object>
+        <object>objects\obj_Plan4</object>
+        <object>objects\obj_Plan5</object>
+        <object>objects\obj_Plan6</object>
+        <object>objects\obj_Plan7</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
