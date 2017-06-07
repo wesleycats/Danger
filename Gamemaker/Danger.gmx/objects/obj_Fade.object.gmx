@@ -213,7 +213,7 @@ if (a == 1)
                 
                 room_goto(PlanetMenu);
                 varia.playerLives = varia.startPlayerLives;
-                varia.newPlanet = "PlanetMenu";
+                varia.newPlanet = "";
                 varia.currentPlanet = varia.newPlanet;
                 varia.planetsLeft -= 1;
                 
@@ -223,7 +223,7 @@ if (a == 1)
         if (varia.planetsLeft &lt; 1)
         {
             room_goto(WinMenu);
-            varia.newPlanet = "Finished";
+            varia.newPlanet = "Earth";
             varia.currentPlanet = varia.newPlanet;
         }
     }          
@@ -239,6 +239,8 @@ if (a == 1)
         }
         else
         {
+            varia.newPlanet = "";
+            varia.currentPlanet = varia.newPlanet;
             room_goto(Menu);
             obj_LevelMan.mainMenu = false;
         }
@@ -336,14 +338,10 @@ if (a == 1)
             varia.newPlanet = varia.currentPlanet;
             
             break;
-            
-            case "Finished":
-            
-            room_goto(WinMenu);
-            
-            break;
         }
     }
+    
+    //
         
     fade = -1;
 }

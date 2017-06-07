@@ -28,8 +28,9 @@
             <string>varia = instance_find(obj_Variables, 1);
 
 name = varia.name;
-
+highName = varia.highName;
 coinsCollected = varia.coinsCollected;
+highCoinsCollected = varia.highCoinsCollected;
 </string>
           </argument>
         </arguments>
@@ -52,30 +53,13 @@ coinsCollected = varia.coinsCollected;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (room_get_name(room) == "Highscore")
-{
-    scr_WinMenu_CheckScore();
-        
-    if (coinsCollected &gt;= obj_Variables.coinsCollected)
-    {    
-        scr_WinMenu_SetScore();
-    }
-}
-
-if (instance_exists(obj_TextBox))
-{
-    coinsCollected = obj_Variables.coinsCollected;
-    
+            <string>if (room_get_name(room) == "WinMenu")
+{   
     if (keyboard_check_pressed(vk_enter))
     {
-        varia.name = obj_TextBox.txt;
-        
-        scr_WinMenu_CheckScore();
-        
-        if (coinsCollected &gt;= obj_Variables.coinsCollected)
-        {    
-            scr_WinMenu_SetScore();
-        }
+        name = obj_TextBox.txt;
+        varia.name = name;
+        coinsCollected = varia.coinsCollected;
         
         obj_LevelMan.mainMenu = true;
         
@@ -84,9 +68,10 @@ if (instance_exists(obj_TextBox))
             instance_create(x, y, obj_Fade);
         }
         
-        game_restart();
+        varia.gameComplete = true;
     }
 }
+
 </string>
           </argument>
         </arguments>
@@ -127,9 +112,9 @@ if (room_get_name(room) == "WinMenu")
 if (room_get_name(room) == "Highscore")
 {
     draw_text_transformed(room_width / 2, room_height / 2 - 100, "De persoon met de hoogste score is: ", 2, 2, 0);
-    draw_text_transformed(room_width / 2, room_height / 2 - 50, varia.name, 2, 2, 0);
+    draw_text_transformed(room_width / 2, room_height / 2 - 50, highName, 2, 2, 0);
     draw_text_transformed(room_width / 2, room_height / 2, "Met een score van: ", 2, 2, 0);
-    draw_text_transformed(room_width / 2, room_height / 2 - -50, string(coinsCollected) + " Muntjes", 2, 2, 0);
+    draw_text_transformed(room_width / 2, room_height / 2 - -50, string(highCoinsCollected) + " Muntjes", 2, 2, 0);
 }
 </string>
           </argument>

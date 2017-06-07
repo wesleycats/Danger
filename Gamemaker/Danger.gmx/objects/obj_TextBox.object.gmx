@@ -120,6 +120,7 @@
         keyboard_string = txt;
     }
 }
+
 </string>
           </argument>
         </arguments>

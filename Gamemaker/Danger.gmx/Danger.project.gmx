@@ -38,8 +38,12 @@
     <sprites name="Textbox">
       <sprite>sprites\spr_TextBox</sprite>
     </sprites>
+    <sprites name="Background">
+      <sprite>sprites\spr_WinMenuScreen</sprite>
+      <sprite>sprites\spr_MainMenu</sprite>
+      <sprite>sprites\spr_Highscore</sprite>
+    </sprites>
     <sprite>sprites\spr_Selected</sprite>
-    <sprite>sprites\spr_WinMenuScreen</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_WallPaper</background>
@@ -191,8 +195,6 @@
           <script>scripts\scr_TextBox_OnStep.gml</script>
           <script>scripts\scr_TextBox_OnDraw.gml</script>
         </scripts>
-        <script>scripts\scr_WinMenu_CheckScore.gml</script>
-        <script>scripts\scr_WinMenu_SetScore.gml</script>
       </scripts>
     </scripts>
   </scripts>
@@ -226,7 +228,6 @@
     <objects name="World">
       <object>objects\obj_Ground</object>
       <object>objects\obj_Coin</object>
-      <object>objects\obj_WinMenuScreen</object>
       <objects name="Planets">
         <object>objects\obj_Plan1</object>
         <object>objects\obj_Plan2</object>
@@ -240,6 +241,11 @@
     <objects name="TextBox">
       <object>objects\obj_Text</object>
       <object>objects\obj_TextBox</object>
+    </objects>
+    <objects name="Background">
+      <object>objects\obj_WinMenuScreen</object>
+      <object>objects\obj_MainMenu</object>
+      <object>objects\obj_Highscore</object>
     </objects>
   </objects>
   <rooms name="rooms">

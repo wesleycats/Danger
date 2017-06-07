@@ -48,9 +48,11 @@ currentPlanet = "";
 
 planetsLeft = 8;
 
-coinsCollected = 0;
-
 name = "None";
+coinsCollected = 0;
+highName = "None";
+highCoinsCollected = 0;
+highScore = false;
 
 startPlayerLives = 10;
 playerLives = 10;
@@ -59,6 +61,7 @@ cont = false;
 cred = false;
 high = false;
 
+gameComplete = false;
 </string>
           </argument>
         </arguments>
@@ -84,12 +87,37 @@ high = false;
             <string>// Tracks if all levels are done to win the game
 if (planetsLeft &lt; 1)
 {
-    newPlanet = "Finished";
+    newPlanet = "";
+    currentPlanet = newPlanet;
     instance_create(x, y, obj_Fade);
 }
 
 // Tracks player lives
 if (playerLives &lt; 1)
+{
+    game_restart();
+}
+
+// Checks what the highscore is
+ini_open("savedata.ini");
+highName = ini_read_string("Save", "Name", highName);
+highCoinsCollected = ini_read_real("Save", "Score", highCoinsCollected);
+ini_close(); 
+
+// Checks if score is higher than highscore and saves it
+if (coinsCollected &gt;= highCoinsCollected)
+{
+    highName = name;
+    highCoinsCollected = coinsCollected;
+    
+    ini_open("savedata.ini");
+    ini_write_string("Save", "Name", highName);
+    ini_write_real("Save", "Score", highCoinsCollected);
+    ini_close(); 
+}
+
+// Checks if game is done
+if (gameComplete)
 {
     game_restart();
 }

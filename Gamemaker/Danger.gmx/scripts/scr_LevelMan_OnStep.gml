@@ -23,17 +23,17 @@ if (keyboard_check_pressed(ord('R')))
 }
 
 if (keyboard_check_pressed(vk_escape))
-{
-    if (room_get_name(room) != "Menu")
-    {
-        mainMenu = true;
-    }
-    
+{   
     if (varia.planetsLeft < 1)
     {
         varia.newPlanet = "Earth";
         varia.currentPlanet = varia.newPlanet;
         varia.planetsLeft = 8;
+    }
+    
+    if (room_get_name(room) != "Menu")
+    {
+        mainMenu = true;
     }
     
     if (!instance_exists(obj_Fade))
@@ -108,4 +108,15 @@ if (keyboard_check_pressed(ord("P")))
     {
        audio_resume_all();
     }
+}
+
+if (keyboard_check_pressed(vk_delete))
+{
+    highName = "None";
+    highCoinsCollected = 0;
+    
+    ini_open("savedata.ini");
+    ini_write_string("Save", "Name", highName);
+    ini_write_real("Save", "Score", highCoinsCollected);
+    ini_close(); 
 }
