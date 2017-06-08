@@ -4,8 +4,14 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_center);
 
 if (txt == "")
-{
-    draw_text(room_width / 2, room_height / 2, "Wat is jouw naam?");
+{   
+    if(obj_Variables.lang = "Dutch")
+    {
+        draw_text(room_width / 2, room_height / 2, "Wat is jouw naam?");
+    }
+    else{
+        draw_text(room_width / 2, room_height / 2, "What is your name?");
+    }
 }
 else
 {

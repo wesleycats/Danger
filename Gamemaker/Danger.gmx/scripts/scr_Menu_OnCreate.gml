@@ -1,13 +1,25 @@
 roomName = room_get_name(room);
 varia = instance_find(obj_Variables, 1);
 
-if (roomName == "Menu")
-{
-    menu[0] = "Speel";
-    menu[1] = "Bediening";
-    menu[2] = "Credits";
-    menu[3] = "Highscore";
-    menu[4] = "Afsluiten";
+if (obj_Variables = "Dutch"){
+    if (roomName == "Menu")
+    {
+        menu[0] = "Speel";
+        menu[1] = "Bediening";
+        menu[2] = "Credits";
+        menu[3] = "Highscore";
+        menu[4] = "Afsluiten";
+    }
+}
+else{
+       if (roomName == "Menu")
+    {
+        menu[0] = "Play";
+        menu[1] = "Controls";
+        menu[2] = "Credits";
+        menu[3] = "Highscore";
+        menu[4] = "Quit";
+    }
 }
 
 if (roomName == "PlanetMenu")
