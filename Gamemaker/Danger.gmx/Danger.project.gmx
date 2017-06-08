@@ -42,6 +42,7 @@
       <sprite>sprites\spr_WinMenuScreen</sprite>
       <sprite>sprites\spr_MainMenu</sprite>
       <sprite>sprites\spr_Highscore</sprite>
+      <sprite>sprites\spr_Controls</sprite>
     </sprites>
     <sprite>sprites\spr_Selected</sprite>
   </sprites>
@@ -246,6 +247,7 @@
       <object>objects\obj_WinMenuScreen</object>
       <object>objects\obj_MainMenu</object>
       <object>objects\obj_Highscore</object>
+      <object>objects\obj_Controls</object>
     </objects>
   </objects>
   <rooms name="rooms">
