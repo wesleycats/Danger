@@ -2,11 +2,10 @@ var varia = instance_find(obj_Variables, 1);
 
 draw_set_font(fnt_Pixel);
 
-switch (varia.newPlanet)
+if (obj_Variables.lang = "Dutch")
 {
-    if(obj_Variables.lang = "Dutch")
+    switch (varia.newPlanet)
     {
-
         case "Mercurius":
         
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 80, "Planeet naam: Mercurius", 2, 2, 1, c_gray, c_gray, c_gray, c_gray, 1);
@@ -87,13 +86,13 @@ switch (varia.newPlanet)
         draw_text_transformed_colour(room_width / 2, room_height / 2 + 80, "Zwaartekracht: 1.14 g", 2, 2, 1, c_blue, c_blue, c_blue, c_blue, 1);
         
         break;
-        }
-        
-        
-        
-        else
-        {
-        
+    }
+}    
+
+if(obj_Variables.lang = "English")
+{
+    switch (varia.newPlanet)
+    {  
         case "Mercurius":
         
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 80, "Planet name: Mercury", 2, 2, 1, c_gray, c_gray, c_gray, c_gray, 1);
@@ -174,5 +173,5 @@ switch (varia.newPlanet)
         draw_text_transformed_colour(room_width / 2, room_height / 2 + 80, "Gravity: 1.14 g", 2, 2, 1, c_blue, c_blue, c_blue, c_blue, 1);
         
         break;
-        }
+    }
 }

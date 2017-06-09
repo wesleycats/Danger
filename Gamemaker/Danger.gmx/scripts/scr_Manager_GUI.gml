@@ -7,4 +7,3 @@ else{
     draw_text_transformed_colour(160, 80, "Lifes remaining: " + string(obj_Variables.playerLives), 2, 2, 0, c_red, c_red, c_red, c_red, 1);
 }
 
-

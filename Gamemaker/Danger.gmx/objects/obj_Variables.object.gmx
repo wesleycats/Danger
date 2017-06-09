@@ -62,6 +62,8 @@ cred = false;
 high = false;
 
 gameComplete = false;
+
+lang = "Dutch";
 </string>
           </argument>
         </arguments>

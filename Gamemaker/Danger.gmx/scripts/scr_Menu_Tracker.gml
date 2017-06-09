@@ -19,7 +19,7 @@ if (move != 0)
 }
 
 var push = 0;
-push = max(keyboard_check_pressed(vk_enter), 0);
+push = max(keyboard_check_pressed(vk_space), 0);
 
 if (push == 1)
 {

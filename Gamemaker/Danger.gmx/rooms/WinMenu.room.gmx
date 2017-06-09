@@ -55,6 +55,7 @@
     <instance objName="obj_Win" x="64" y="0" name="inst_77DEDEB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_WinMenuScreen" x="960" y="540" name="inst_7A50198A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TextBox" x="960" y="608" name="inst_2F80C442" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WinMenuScreen" x="960" y="540" name="inst_7238082F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
