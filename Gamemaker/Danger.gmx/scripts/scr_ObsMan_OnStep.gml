@@ -6,3 +6,5 @@ debFlyDir = choose(0, 1);
 ufoSpawnChance = random_range(0, 100);
 satSpawnChance = random_range(0, 100);
 debSpawnChance = random_range(0, 100);
+
+scr_ObsMan_Difficulty()

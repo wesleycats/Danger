@@ -34,6 +34,7 @@
       <sprite>sprites\spr_Satellite</sprite>
       <sprite>sprites\spr_Ufo</sprite>
       <sprite>sprites\spr_Debris</sprite>
+      <sprite>sprites\spr_AlienBird</sprite>
     </sprites>
     <sprites name="Textbox">
       <sprite>sprites\spr_TextBox</sprite>
@@ -97,6 +98,7 @@
         <script>scripts\scr_ObsMan_OnStep.gml</script>
         <scripts name="Step Functions">
           <script>scripts\scr_ObsMan_Spawn.gml</script>
+          <script>scripts\scr_ObsMan_Difficulty.gml</script>
         </scripts>
       </scripts>
       <scripts name="Level Manager">
@@ -214,6 +216,7 @@
       <object>objects\obj_Debris</object>
       <object>objects\obj_Asteroid</object>
       <object>objects\obj_Ufo</object>
+      <object>objects\obj_AlienBird</object>
     </objects>
     <objects name="Managers">
       <object>objects\obj_TakeOff</object>
@@ -260,6 +263,7 @@
       <room>rooms\Saturnus</room>
       <room>rooms\Uranus</room>
       <room>rooms\Neptunus</room>
+      <room>rooms\PlanetX</room>
     </rooms>
     <room>rooms\WinMenu</room>
     <rooms name="Planet Info">
