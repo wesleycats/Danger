@@ -111,10 +111,21 @@ if (room_get_name(room) == "WinMenu")
 
 if (room_get_name(room) == "Highscore")
 {
-    draw_text_transformed(room_width / 2, room_height / 2 - 100, "De persoon met de hoogste score is: ", 2, 2, 0);
-    draw_text_transformed(room_width / 2, room_height / 2 - 50, highName, 2, 2, 0);
-    draw_text_transformed(room_width / 2, room_height / 2, "Met een score van: ", 2, 2, 0);
-    draw_text_transformed(room_width / 2, room_height / 2 - -50, string(highCoinsCollected) + " Muntjes", 2, 2, 0);
+    if (obj_Variables.lang == "Dutch")
+    {
+        draw_text_transformed(room_width / 2, room_height / 2 - 100, "De persoon met de hoogste score is: ", 2, 2, 0);
+        draw_text_transformed(room_width / 2, room_height / 2 - 50, highName, 2, 2, 0);
+        draw_text_transformed(room_width / 2, room_height / 2, "Met een score van: ", 2, 2, 0);
+        draw_text_transformed(room_width / 2, room_height / 2 - -50, string(highCoinsCollected) + " Muntjes", 2, 2, 0);
+    }
+    
+    if (obj_Variables.lang == "English")
+    {
+        draw_text_transformed(room_width / 2, room_height / 2 - 100, "The person with the highest score is: ", 2, 2, 0);
+        draw_text_transformed(room_width / 2, room_height / 2 - 50, highName, 2, 2, 0);
+        draw_text_transformed(room_width / 2, room_height / 2, "With a score of: ", 2, 2, 0);
+        draw_text_transformed(room_width / 2, room_height / 2 - -50, string(highCoinsCollected) + " Coins", 2, 2, 0);
+    }
 }
 </string>
           </argument>

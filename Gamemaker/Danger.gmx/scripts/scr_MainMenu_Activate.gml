@@ -54,6 +54,19 @@ switch (mPos)
     
     case 4:
     
+    if (varia.lang == "Dutch")
+    {
+        varia.lang = "English";
+    }
+    else
+    {
+        varia.lang = "Dutch";
+    }
+    
+    break;
+      
+    case 5:
+    
     game_end();
     
     break;
