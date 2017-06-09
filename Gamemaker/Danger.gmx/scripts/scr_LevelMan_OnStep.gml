@@ -4,6 +4,9 @@ if (keyboard_check_pressed(ord('C')))
     show_message("New: " + string(varia.newPlanet));
     show_message("Room: " + string(room_get_name(room)));
     show_message("Planets left: " + string(varia.planetsLeft));
+    if(instance_exists(obj_ObsMan)){
+        show_message("start Time:" + string(obj_ObsMan.startTime));
+    }   
 }
 
 if (keyboard_check_pressed(ord('X')))
