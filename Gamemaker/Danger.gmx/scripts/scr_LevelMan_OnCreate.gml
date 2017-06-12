@@ -8,3 +8,5 @@ global.Pause = true;
 varia = instance_find(obj_Variables, 1);
 
 mainMenu = false;
+
+roomName = room_get_name(room);

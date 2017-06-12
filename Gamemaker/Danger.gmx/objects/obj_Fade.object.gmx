@@ -11,23 +11,41 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>a = 0;
-fade = 1;
-</string>
+            <kind>9</kind>
+            <script>scr_Fade_OnCreate</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -35,334 +53,41 @@ fade = 1;
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>a = clamp(a + (fade * 0.025), 0, 1);
-
-if (a == 1)
-{
-    var roomName = room_get_name(room);
-    var varia = instance_find(obj_Variables, 1);
-    
-    if (roomName == "Menu")
-    {
-        switch (varia.newPlanet)
-        {
-            case "Earth":
-            
-            room_goto(Earth_Info);
-            
-            break;
-            
-            case "Mercurius":
-    
-            room_goto(Mercurius);
-    
-            break;
-            
-            case "Venus":
-            
-            room_goto(Venus);
-            
-            break;
-            
-            case "Mars":
-            
-            room_goto(Mars);
-        
-            break;
-            
-            case "Jupiter":
-            
-            room_goto(Jupiter);
-            
-            break;
-            
-            case "Saturnus":
-            
-            room_goto(Saturnus);
-            
-            break;
-            
-            case "Uranus":
-            
-            room_goto(Uranus);
-            
-            break;
-            
-            case "Neptunus":
-            
-            room_goto(Neptunus);
-            
-            break;
-            
-            case "MainMenu":
-            
-            room_goto(Menu);
-            varia.playerLives = varia.startPlayerLives;
-            
-            break;
-            
-            case "PlanetMenu":
-            
-            room_goto(PlanetMenu);
-            
-            break;
-        }
-    }
-    
-    if (varia.cont)
-    {
-        room_goto(Controls);
-        varia.cont = false;
-    }
-    
-    if (varia.cred)
-    {
-        room_goto(Credits);
-        varia.cred = false;
-    }
-    
-    if (varia.high)
-    {
-        room_goto(Highscore);
-        varia.high = false;
-    }
-    
-    if (roomName != "Menu" &amp;&amp; roomName != "PlanetMenu" &amp;&amp; roomName != "Credits" &amp;&amp; roomName != "Controls" &amp;&amp; roomName != "Highscore" &amp;&amp; roomName != "WinMenu")
-    {          
-            switch (roomName)
-            {
-                case "Merc_Info":
-                
-                room_goto(Mercurius);
-                varia.playerLives = varia.startPlayerLives;
-                varia.currentPlanet = "Mercurius";
-                
-                break;
-                
-                case "Venus_Info":
-                
-                room_goto(Venus);
-                varia.playerLives = varia.startPlayerLives;
-                varia.currentPlanet = "Venus";
-                
-                break;
-                
-                case "Earth_Info":
-                
-                room_goto(Earth);
-                varia.playerLives = varia.startPlayerLives;
-                varia.currentPlanet = "Earth";
-                
-                break;
-                
-                case "Mars_Info":
-                
-                room_goto(Mars);
-                varia.playerLives = varia.startPlayerLives;
-                varia.currentPlanet = "Mars";
-                
-                break;
-                
-                case "Jupi_Info":
-                
-                room_goto(Jupiter);
-                varia.playerLives = varia.startPlayerLives;
-                varia.currentPlanet = "Jupiter";
-                
-                break;
-                
-                case "Satu_Info":
-                
-                room_goto(Saturnus);
-                varia.playerLives = varia.startPlayerLives;
-                varia.currentPlanet = "Saturnus";
-                
-                break;
-                
-                case "Uran_Info":
-                
-                room_goto(Uranus);
-                varia.playerLives = varia.startPlayerLives;
-                varia.currentPlanet = "Uranus";
-                
-                break;
-                
-                case "Nept_Info":
-                
-                room_goto(Neptunus);
-                varia.playerLives = varia.startPlayerLives;
-                varia.currentPlanet = "Neptunus";
-                
-                break;
-                
-                default:
-                
-                room_goto(PlanetMenu);
-                varia.playerLives = varia.startPlayerLives;
-                varia.newPlanet = "";
-                varia.currentPlanet = varia.newPlanet;
-                varia.planetsLeft -= 1;
-                
-                break;
-            }  
-            
-        if (varia.planetsLeft &lt; 1)
-        {
-            room_goto(WinMenu);
-            varia.newPlanet = "Earth";
-            varia.currentPlanet = varia.newPlanet;
-        }
-    }          
-    
-    if (obj_LevelMan.mainMenu)
-    {
-        if (roomName == "Mercurius" || roomName == "Venus" || roomName == "Earth" || roomName == "Mars" || roomName == "Jupiter" || roomName == "Saturnus" || roomName == "Uranus" || roomName == "Neptunus" || roomName == "PlanetMenu" &amp;&amp; roomName != "WinMenu")
-        {
-            varia.newPlanet = room_get_name(room);
-            varia.currentPlanet = varia.newPlanet;
-            room_goto(Menu);
-            obj_LevelMan.mainMenu = false;
-        }
-        else
-        {
-            varia.newPlanet = "";
-            varia.currentPlanet = varia.newPlanet;
-            room_goto(Menu);
-            obj_LevelMan.mainMenu = false;
-        }
-        
-    }
-    
-    if (roomName == "PlanetMenu")
-    {
-        switch (varia.newPlanet)
-        {
-            case "Mercurius":
-            
-            if (varia.plan1)
-            {
-                room_goto(Merc_Info);
-                varia.plan1 = false;
-                
-            }
-            
-            break;
-            
-            case "Venus":
-            
-            if (varia.plan2)
-            {
-                room_goto(Venus_Info);
-                varia.plan2 = false;
-                
-            }
-            
-            break;
-            
-            case "Mars":
-            
-            if (varia.plan3)
-            {
-                room_goto(Mars_Info);   
-                varia.plan3 = false;
-                
-            }
-        
-            break;
-            
-            case "Jupiter":
-            
-            if (varia.plan4)
-            {
-                room_goto(Jupi_Info);    
-                varia.plan4 = false;
-                
-            }
-        
-            
-            break;
-            
-            case "Saturnus":
-            
-            if (varia.plan5)
-            {
-                room_goto(Satu_Info);
-                varia.plan5 = false;
-                
-            }
-            
-            
-            break;
-            
-            case "Uranus":
-            
-            if (varia.plan6)
-            {
-                room_goto(Uran_Info);
-                varia.plan6 = false;
-                
-            }
-            
-            
-            break;
-            
-            case "Neptunus":
-            
-            if (varia.plan7)
-            {
-                room_goto(Nept_Info);
-                varia.plan7 = false;
-                
-            }
-            
-            break;
-            
-            case "MainMenu":
-            
-            room_goto(Menu);
-            varia.playerLives = varia.startPlayerLives;
-            varia.newPlanet = varia.currentPlanet;
-            
-            break;
-        }
-    }
-    
-    //
-        
-    fade = -1;
-}
-
-if (a == 0 &amp;&amp; fade == -1)
-{
-    instance_destroy();
-}
-
-draw_set_color(c_black);
-draw_set_alpha(a);
-draw_rectangle
-(
-    view_xview[0],
-    view_yview[0],
-    view_xview[0] + view_wview[0],
-    view_yview[0] + view_hview[0],
-    0
-);
-draw_set_alpha(1);
-</string>
+            <kind>9</kind>
+            <script>scr_Fade_OnDraw</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
