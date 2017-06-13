@@ -71,13 +71,129 @@
                 
                 break;
                 
-                default:
+                case "Mercurius":
+    
+                room_goto(PlanetMenu);
+                varia.playerLives = varia.startPlayerLives;
+                varia.newPlanet = "";
+                varia.currentPlanet = varia.newPlanet;
+                
+                if (start)
+                {
+                    varia.pl anetsLeft -= 1;
+                    start = false;
+                }
+                
+                break;
+                
+                case "Venus":
                 
                 room_goto(PlanetMenu);
                 varia.playerLives = varia.startPlayerLives;
                 varia.newPlanet = "";
                 varia.currentPlanet = varia.newPlanet;
-                varia.planetsLeft -= 1;
+                
+                if (start)
+                {
+                    varia.planetsLeft -= 1;
+                    start = false;
+                }
+                
+                break;
+                
+                case "Earth":
+                
+                room_goto(PlanetMenu);
+                varia.playerLives = varia.startPlayerLives;
+                varia.newPlanet = "";
+                varia.currentPlanet = varia.newPlanet;
+                
+                if (start)
+                {
+                    varia.planetsLeft -= 1;
+                    start = false;
+                }
+                
+                break;
+                
+                case "Mars":
+                
+                room_goto(PlanetMenu);
+                varia.playerLives = varia.startPlayerLives;
+                varia.newPlanet = "";
+                varia.currentPlanet = varia.newPlanet;
+                
+                if (start)
+                {
+                    varia.planetsLeft -= 1;
+                    start = false;
+                }
+            
+                break;
+                
+                case "Jupiter":
+                
+                room_goto(PlanetMenu);
+                varia.playerLives = varia.startPlayerLives;
+                varia.newPlanet = "";
+                varia.currentPlanet = varia.newPlanet;
+                
+                if (start)
+                {
+                    varia.planetsLeft -= 1;
+                    start = false;
+                }
+                
+                break;
+                
+                case "Saturnus":
+                
+                room_goto(PlanetMenu);
+                varia.playerLives = varia.startPlayerLives;
+                varia.newPlanet = "";
+                varia.currentPlanet = varia.newPlanet;
+                
+                if (start)
+                {
+                    varia.planetsLeft -= 1;
+                    start = false;
+                }
+                
+                break;
+                
+                case "Uranus":
+                
+                room_goto(PlanetMenu);
+                varia.playerLives = varia.startPlayerLives;
+                varia.newPlanet = "";
+                varia.currentPlanet = varia.newPlanet;
+                
+                if (start)
+                {
+                    varia.planetsLeft -= 1;
+                    start = false;
+                }
+                
+                break;
+                
+                case "Neptunus":
+                
+                room_goto(PlanetMenu);
+                varia.playerLives = varia.startPlayerLives;
+                varia.newPlanet = "";
+                varia.currentPlanet = varia.newPlanet;
+                
+                if (start)
+                {
+                    varia.planetsLeft -= 1;
+                    start = false;
+                }
+                
+                break;
+                
+                default:
+                
+                
                 
                 break;
             }  

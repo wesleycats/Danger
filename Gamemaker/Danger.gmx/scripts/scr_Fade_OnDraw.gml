@@ -1,5 +1,4 @@
-a = clamp(a + (fade * 0.025), 0, 1);
-
+a = clamp(a + (fade * 0.05), 0, 1);
 if (a == 1)
 {
 
@@ -30,6 +29,7 @@ if (a == 1)
 
 if (a == 0 && fade == -1)
 {   
+    start = true;
     instance_destroy();
 }
 
