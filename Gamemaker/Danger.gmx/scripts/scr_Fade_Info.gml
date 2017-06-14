@@ -80,7 +80,7 @@
                 
                 if (start)
                 {
-                    varia.pl anetsLeft -= 1;
+                    varia.planetsLeft -= 1;
                     start = false;
                 }
                 

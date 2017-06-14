@@ -21,7 +21,6 @@ switch (mPos)
     
     case 1:
     
-    
     varia.cont = true;
     
     
