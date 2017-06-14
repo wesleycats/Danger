@@ -15,7 +15,7 @@ switch (mPos)
     {
         instance_create(x, y, obj_Fade);
     }
-       
+    
     break;    
     
     
@@ -23,21 +23,23 @@ switch (mPos)
     
     varia.cont = true;
     
+    
     if (!instance_exists(obj_Fade))
     {
         instance_create(x, y, obj_Fade);
     }
+    
             
     break;
     
     case 2:
     
     varia.cred = true;
-    
+     
     if (!instance_exists(obj_Fade))
     {
         instance_create(x, y, obj_Fade);
-    }
+    } 
     
     break;
     
@@ -54,9 +56,22 @@ switch (mPos)
     
     case 4:
     
+    if (varia.lang == "Dutch")
+    {
+        varia.lang = "English";
+        push = 0;
+    }
+    else
+    {
+        varia.lang = "Dutch";
+        push = 0;
+    }
+    
+    break;
+      
+    case 5:
+    
     game_end();
     
     break;
-    
-    default:    break;
 }

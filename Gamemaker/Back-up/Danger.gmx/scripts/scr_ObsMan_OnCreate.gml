@@ -1,4 +1,4 @@
-startTime = 0.5;
+startTime = 2;
 alarm[0] = room_speed * startTime;
     
 birdAmount = 0;

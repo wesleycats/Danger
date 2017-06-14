@@ -3,7 +3,6 @@ if (keyboard_check_pressed(ord('C')))
     show_message("Current: " + string(varia.currentPlanet));
     show_message("New: " + string(varia.newPlanet));
     show_message("Room: " + string(room_get_name(room)));
-    show_message("Planets left: " + string(varia.planetsLeft));
 }
 
 if (keyboard_check_pressed(ord('X')))
@@ -15,6 +14,11 @@ if (keyboard_check_pressed(ord('X')))
 if (keyboard_check_pressed(ord('Q')))
 {
     scr_Player_Reset();
+    
+    if (roomName == "Menu" || roomName == "PlanetMenu")
+    {
+        room_restart();
+    }
 }
 
 if (keyboard_check_pressed(ord('R')))
@@ -22,23 +26,26 @@ if (keyboard_check_pressed(ord('R')))
     game_restart();
 }
 
-if (keyboard_check_pressed(vk_escape))
-{   
-    if (varia.planetsLeft < 1)
-    {
-        varia.newPlanet = "Earth";
-        varia.currentPlanet = varia.newPlanet;
-        varia.planetsLeft = 8;
-    }
-    
-    if (room_get_name(room) != "Menu")
-    {
-        mainMenu = true;
-    }
-    
-    if (!instance_exists(obj_Fade))
-    {
-        instance_create(x, y, obj_Fade);
+if (!instance_exists(obj_Fade))
+{
+    if (keyboard_check_pressed(vk_escape))
+    {   
+        if (varia.planetsLeft < 1)
+        {
+            varia.newPlanet = "Earth";
+            varia.currentPlanet = varia.newPlanet;
+            varia.planetsLeft = 8;
+        }
+        
+        if (room_get_name(room) != "Menu")
+        {
+            mainMenu = true;
+        }
+        
+        if (!instance_exists(obj_Fade))
+        {
+            instance_create(x, y, obj_Fade);
+        }
     }
 }
 

@@ -98,6 +98,7 @@
         <script>scripts\scr_ObsMan_OnStep.gml</script>
         <scripts name="Step Functions">
           <script>scripts\scr_ObsMan_Spawn.gml</script>
+          <script>scripts\scr_ObsMan_Difficulty.gml</script>
         </scripts>
       </scripts>
       <scripts name="Level Manager">
@@ -110,6 +111,16 @@
         <script>scripts\scr_Info_OnDraw.gml</script>
       </scripts>
       <script>scripts\scr_Manager_GUI.gml</script>
+      <scripts name="Fade">
+        <script>scripts\scr_Fade_OnCreate.gml</script>
+        <script>scripts\scr_Fade_OnDraw.gml</script>
+        <scripts name="Functions">
+          <script>scripts\scr_Fade_Info.gml</script>
+          <script>scripts\scr_Fade_Menu.gml</script>
+          <script>scripts\scr_Fade_ToMenu.gml</script>
+          <script>scripts\scr_Fade_PlanetMenu.gml</script>
+        </scripts>
+      </scripts>
     </scripts>
     <scripts name="Obstacles">
       <scripts name="Asteroid">
@@ -262,6 +273,7 @@
       <room>rooms\Saturnus</room>
       <room>rooms\Uranus</room>
       <room>rooms\Neptunus</room>
+      <room>rooms\PlanetX</room>
     </rooms>
     <room>rooms\WinMenu</room>
     <rooms name="Planet Info">

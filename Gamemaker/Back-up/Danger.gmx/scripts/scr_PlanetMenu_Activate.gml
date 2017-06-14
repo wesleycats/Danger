@@ -3,7 +3,8 @@ switch (mPos)
     case 0:
     {
         varia.newPlanet = "Mercurius";
-        varia.planet1 = "DONE";
+        
+        //activated = true;
          
         if (!instance_exists(obj_Fade))
         {
@@ -16,7 +17,8 @@ switch (mPos)
     case 1:
     {
         varia.newPlanet = "Venus";
-        varia.planet2 = "DONE";
+        
+        //activated = true;
 
         if (!instance_exists(obj_Fade))
         {
@@ -29,7 +31,8 @@ switch (mPos)
     case 2:
     {
         varia.newPlanet = "Mars";
-        varia.planet3 = "DONE";
+        
+        //activated = true;
         
         if (!instance_exists(obj_Fade))
         {
@@ -41,8 +44,9 @@ switch (mPos)
     
     case 3:
     {
-        varia.newPlanet = "Jupiter";  
-        varia.planet4 = "DONE";
+        varia.newPlanet = "Jupiter";
+        
+        //activated = true;
         
         if (!instance_exists(obj_Fade))
         {
@@ -55,7 +59,8 @@ switch (mPos)
     case 4:
     {
         varia.newPlanet = "Saturnus";
-        varia.planet5 = "DONE";
+        
+        //activated = true;
 
         if (!instance_exists(obj_Fade))
         {
@@ -68,7 +73,8 @@ switch (mPos)
     case 5:
     {
         varia.newPlanet = "Uranus"; 
-        varia.planet6 = "DONE";
+
+        //activated = true;
         
         if (!instance_exists(obj_Fade))
         {
@@ -76,12 +82,14 @@ switch (mPos)
         }
         
         break;
+        
     }
     
     case 6:
     {
         varia.newPlanet = "Neptunus";  
-        varia.planet7 = "DONE";
+        
+        //activated = true;
    
         if (!instance_exists(obj_Fade))
         {
@@ -90,6 +98,4 @@ switch (mPos)
         
         break;
     }
-    
-    default:    break;
 }
