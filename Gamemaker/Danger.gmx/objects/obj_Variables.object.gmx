@@ -33,6 +33,7 @@ planet5 = "Saturnus";
 planet6 = "Uranus";
 planet7 = "Neptunus";
 planet8 = "Earth";
+planet9 = "PlanetX";
 
 plan1 = true;
 plan2 = true;
@@ -42,11 +43,13 @@ plan5 = true;
 plan6 = true;
 plan7 = true;
 plan8 = true;
+plan9 = true;
 
 newPlanet = "";
 currentPlanet = "";
 
 planetsLeft = 8;
+Xadd = false;
 
 name = "None";
 coinsCollected = 0;
@@ -64,6 +67,8 @@ high = false;
 gameComplete = false;
 
 lang = "Dutch";
+
+xUnlocked = false;
 </string>
           </argument>
         </arguments>
@@ -122,6 +127,12 @@ if (coinsCollected &gt;= highCoinsCollected)
 if (gameComplete)
 {
     game_restart();
+}
+
+if (Xadd)
+{
+    planetsLeft += 1;
+    Xadd = false;
 }
 </string>
           </argument>

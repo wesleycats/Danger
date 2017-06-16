@@ -29,7 +29,11 @@ if (roomName == "PlanetMenu")
     menu[3] = varia.planet4;
     menu[4] = varia.planet5;
     menu[5] = varia.planet6;
-    menu[6] = varia.planet7; 
+    menu[6] = varia.planet7;
+    if (varia.xUnlocked)
+    {
+        menu[7] = varia.planet9;
+    }
 }
 
 

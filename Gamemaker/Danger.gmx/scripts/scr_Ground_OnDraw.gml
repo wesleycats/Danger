@@ -56,5 +56,11 @@ switch(roomName)
     draw_sprite_ext(sprite_index, image_index, xPos, yPos, 60, 1, 0, c_blue, 1);
     
     break;
+    
+    case "PlanetX":
+    
+    draw_sprite_ext(sprite_index, image_index, xPos, yPos, 60, 1, 0, c_red, 1);
+    
+    break;
 }
 

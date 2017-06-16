@@ -25,6 +25,7 @@
         <sprite>sprites\spr_Plan5</sprite>
         <sprite>sprites\spr_Plan6</sprite>
         <sprite>sprites\spr_Plan7</sprite>
+        <sprite>sprites\spr_PlanetX</sprite>
       </sprites>
     </sprites>
     <sprites name="Obstacles">
@@ -35,6 +36,7 @@
       <sprite>sprites\spr_Ufo</sprite>
       <sprite>sprites\spr_Debris</sprite>
       <sprite>sprites\spr_AlienBird</sprite>
+      <sprite>sprites\spr_Spider</sprite>
     </sprites>
     <sprites name="Textbox">
       <sprite>sprites\spr_TextBox</sprite>
@@ -59,6 +61,7 @@
       <background>background\bg_Saturnus</background>
       <background>background\bg_Uranus</background>
       <background>background\bg_Neptunus</background>
+      <background>background\bg_PlanetX</background>
     </backgrounds>
     <backgrounds name="Menu">
       <background>background\bg_MainMenu</background>
@@ -164,6 +167,16 @@
           <script>scripts\scr_Ufo_Spawn.gml</script>
         </scripts>
       </scripts>
+      <scripts name="X">
+        <script>scripts\scr_X_OnCreate.gml</script>
+        <script>scripts\scr_X_OnStep.gml</script>
+        <script>scripts\scr_X_OnDraw.gml</script>
+        <scripts name="Step Functions">
+          <script>scripts\scr_X_Movement.gml</script>
+          <script>scripts\scr_X_Collision.gml</script>
+          <script>scripts\scr_X_Spawn.gml</script>
+        </scripts>
+      </scripts>
     </scripts>
     <scripts name="World">
       <scripts name="Coin">
@@ -218,6 +231,7 @@
       <object>objects\obj_Asteroid</object>
       <object>objects\obj_Ufo</object>
       <object>objects\obj_AlienBird</object>
+      <object>objects\obj_Spider</object>
     </objects>
     <objects name="Managers">
       <object>objects\obj_TakeOff</object>

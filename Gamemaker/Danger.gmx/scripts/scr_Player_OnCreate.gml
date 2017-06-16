@@ -80,6 +80,15 @@ switch (roomName)
     verGravity = 0.56;
     
     break;
+    
+    case "PlanetX":
+    
+    maxVsp = 15;
+    maxDownVsp = 2;
+    maxHsp = 2;
+    verGravity = 2;
+    
+    break;
 }
 
 prevGravity = verGravity;

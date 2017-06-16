@@ -18,8 +18,13 @@ maxSatHeight = 1500;
 
 debAmount = 0;
 debFlyDir = 0;
-minDebHeight = 400;
-maxDebHeight = 2000;
+minDebHeight = 1000;
+maxDebHeight = 3300;
+
+XAmount = 0;
+XFlyDir = 0;
+minXHeight = 1000;
+maxXHeight = 3300;
 
 xScale = 1;
 
@@ -91,6 +96,15 @@ switch (roomName)
     break;
     
     case "Neptunus":
+    
+    astAmount = 0;
+    astFlyDir = 0;
+    minAstHeight = 100;
+    maxAstHeight = 3300;
+    
+    break;
+    
+    case "PlanetX":
     
     astAmount = 0;
     astFlyDir = 0;

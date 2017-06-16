@@ -26,6 +26,11 @@ switch (roomName)
         scr_Debris_Spawn();
     }
     
+    if (XSpawnChance > 170)
+    {
+        scr_X_Spawn();
+    }  
+    
     break;
     
     case "Venus":
@@ -46,6 +51,11 @@ switch (roomName)
     {
         scr_Debris_Spawn();
     }
+    
+    if (XSpawnChance > 170)
+    {
+        scr_X_Spawn();
+    }  
     
     break;
     
@@ -69,6 +79,11 @@ switch (roomName)
         scr_Debris_Spawn();
     }
     
+    if (XSpawnChance > 5)
+    {
+        scr_X_Spawn();
+    }  
+    
     break;
     
     case "Mars":
@@ -89,6 +104,11 @@ switch (roomName)
     {
         scr_Debris_Spawn();
     }
+    
+    if (XSpawnChance > 170)
+    {
+        scr_X_Spawn();
+    }  
     
     break;
     
@@ -111,6 +131,11 @@ switch (roomName)
         scr_Debris_Spawn();
     }
     
+    if (XSpawnChance > 170)
+    {
+        scr_X_Spawn();
+    }  
+    
     break;
     
     case "Saturnus":
@@ -131,6 +156,11 @@ switch (roomName)
     {
         scr_Debris_Spawn();
     }
+    
+    if (XSpawnChance > 170)
+    {
+        scr_X_Spawn();
+    }  
     
     break;
     
@@ -153,6 +183,11 @@ switch (roomName)
         scr_Debris_Spawn();
     }
     
+    if (XSpawnChance > 170)
+    {
+        scr_X_Spawn();
+    }  
+    
     break;
     
     case "Neptunus":
@@ -174,12 +209,28 @@ switch (roomName)
         scr_Debris_Spawn();
     }
     
+    if (XSpawnChance > 170)
+    {
+        scr_X_Spawn();
+    }  
+    
     break;
     
-    default: 
+    case "PlanetX":
+    
+    scr_Asteroid_Spawn();
+    
+    if (ufoSpawnChance > 50)
+    {
+        scr_Ufo_Spawn();
+    }  
+
+    if (XSpawnChance > 50)
+    {
+        scr_X_Spawn();
+    }  
     
     break;
-    
 }
 
 

@@ -37,5 +37,10 @@ if(room_get_name(room) == "PlanetMenu")
     {
         draw_sprite(spr_Plan7,image_index,1728,96);   
     }
+    
+    if(varia.plan9 == true)
+    {
+        draw_sprite(spr_PlanetX,image_index,1792,928);   
+    }
 }
 
