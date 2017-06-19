@@ -91,9 +91,7 @@ xUnlocked = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>roomName = room_get_name(room);
-
-// Tracks if all levels are done to win the game
+            <string>// Tracks if all levels are done to win the game
 if (planetsLeft &lt; 1)
 {
     newPlanet = "";
@@ -118,13 +116,11 @@ if (coinsCollected &gt;= highCoinsCollected)
 {
     highName = name;
     highCoinsCollected = coinsCollected;
-    if(room = "Neptunes")
-    {
-        ini_open("savedata.ini");
-        ini_write_string("Save", "Name", highName);
-        ini_write_real("Save", "Score", highCoinsCollected);
-        ini_close(); 
-    }
+    
+    ini_open("savedata.ini");
+    ini_write_string("Save", "Name", highName);
+    ini_write_real("Save", "Score", highCoinsCollected);
+    ini_close(); 
 }
 
 // Checks if game is done
