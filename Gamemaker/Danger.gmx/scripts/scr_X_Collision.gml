@@ -13,6 +13,11 @@ if (place_meeting(x, y, obj_Player))
     }
     else
     {
+        if (!obj_Variables.xUnlocked)
+        {
+            obj_Variables.planetsLeft += 1;
+        }
+        
         obj_Variables.xUnlocked = true;
         instance_destroy();
     }

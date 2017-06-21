@@ -6,8 +6,9 @@ if (roomName == "Menu")
         menu[1] = "Bediening";
         menu[2] = "Credits";
         menu[3] = "Hoogste score";
-        menu[4] = "Taal";
-        menu[5] = "Afsluiten";
+        menu[4] = "Language";
+        menu[5] = "Moeilijkheid:  " + diff;
+        menu[6] = "Afsluiten";
     }
     
     if (obj_Variables.lang == "English")
@@ -16,8 +17,9 @@ if (roomName == "Menu")
         menu[1] = "Controls";
         menu[2] = "Credits";
         menu[3] = "Highscore";
-        menu[4] = "Language";
-        menu[5] = "Quit";
+        menu[4] = "Taal";
+        menu[5] = "Difficulty:  " + diff;
+        menu[6] = "Quit";
     }
 }
 
@@ -36,5 +38,44 @@ if (roomName == "PlanetMenu")
     }
 }
 
+// Translates the difficulty
+if (varia.difficulty == "Easy")
+{
+    if (varia.lang == "Dutch")
+    {
+        diff = "Makkelijk";
+    }
+            
+    if (varia.lang == "English")
+    {
+        diff = "Easy";
+    }
+}
+
+if (varia.difficulty == "Normal")
+{
+    if (varia.lang == "Dutch")
+    {
+        diff = "Normaal";
+    }
+            
+    if (varia.lang == "English")
+    {
+        diff = "Normal";
+    }
+}
+
+if (varia.difficulty == "Hard")
+{
+    if (varia.lang == "Dutch")
+    {
+        diff = "Moeilijk";
+    }
+            
+    if (varia.lang == "English")
+    {
+        diff = "Hard";
+    }
+}
 
 scr_Menu_Tracker();

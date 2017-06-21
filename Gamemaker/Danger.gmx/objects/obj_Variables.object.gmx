@@ -69,6 +69,10 @@ gameComplete = false;
 lang = "Dutch";
 
 xUnlocked = false;
+
+activated = false;
+
+difficulty = "Normal";
 </string>
           </argument>
         </arguments>

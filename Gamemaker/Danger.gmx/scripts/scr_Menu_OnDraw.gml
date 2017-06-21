@@ -15,4 +15,4 @@ for (m = 0; m < array_length_1d(menu); m++)
 
 }
 
-draw_sprite_ext(sprite_index, image_index, room_width / 2 - space - 32, y + mPos * space + 16, 1.5, 1.5, 0, c_white, 1);
+draw_sprite_ext(sprite_index, image_index, room_width / 2 - space * 3, y + mPos * space + 16, 1.5, 1.5, 0, c_white, 1);

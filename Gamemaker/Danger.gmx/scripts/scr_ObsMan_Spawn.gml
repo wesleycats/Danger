@@ -26,7 +26,7 @@ switch (roomName)
         scr_Debris_Spawn();
     }
     
-    if (XSpawnChance > 170)
+    if (XSpawnChance > 180)
     {
         scr_X_Spawn();
     }  
@@ -52,7 +52,7 @@ switch (roomName)
         scr_Debris_Spawn();
     }
     
-    if (XSpawnChance > 170)
+    if (XSpawnChance > 180)
     {
         scr_X_Spawn();
     }  
@@ -105,7 +105,7 @@ switch (roomName)
         scr_Debris_Spawn();
     }
     
-    if (XSpawnChance > 170)
+    if (XSpawnChance > 180)
     {
         scr_X_Spawn();
     }  
@@ -131,7 +131,7 @@ switch (roomName)
         scr_Debris_Spawn();
     }
     
-    if (XSpawnChance > 170)
+    if (XSpawnChance > 180)
     {
         scr_X_Spawn();
     }  
@@ -157,7 +157,7 @@ switch (roomName)
         scr_Debris_Spawn();
     }
     
-    if (XSpawnChance > 170)
+    if (XSpawnChance > 180)
     {
         scr_X_Spawn();
     }  
@@ -183,7 +183,7 @@ switch (roomName)
         scr_Debris_Spawn();
     }
     
-    if (XSpawnChance > 170)
+    if (XSpawnChance > 180)
     {
         scr_X_Spawn();
     }  
@@ -209,7 +209,7 @@ switch (roomName)
         scr_Debris_Spawn();
     }
     
-    if (XSpawnChance > 170)
+    if (XSpawnChance > 180)
     {
         scr_X_Spawn();
     }  

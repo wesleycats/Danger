@@ -9,4 +9,4 @@ XSpawnChance = random_range(0, 200);
 satSpawnChance = random_range(0, 100);
 debSpawnChance = random_range(0, 100);
 
-scr_ObsMan_Difficulty()
+scr_ObsMan_Difficulty();

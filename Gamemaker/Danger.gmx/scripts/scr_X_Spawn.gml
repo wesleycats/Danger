@@ -9,8 +9,18 @@ if (XFlyDir == 1)
 }
 
 y = random_range(minXHeight, maxXHeight);
-instance_create(x, y, obj_Spider);
 
+if (roomName != "PlanetX")
+{
+    if (!varia.xUnlocked)
+    {
+        instance_create(x, y, obj_Spider);
+    }
+}
+else
+{
+    instance_create(x, y, obj_Spider);
+}
 XAmount += 1;
 
 alarm[0] = room_speed * startTime;

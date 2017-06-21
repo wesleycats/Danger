@@ -1,4 +1,4 @@
-startTime = 2;
+startTime = 1;
 alarm[0] = room_speed * startTime;
     
 birdAmount = 0;
@@ -113,3 +113,5 @@ switch (roomName)
     
     break;
 }
+
+varia = instance_find(obj_Variables, 1);
