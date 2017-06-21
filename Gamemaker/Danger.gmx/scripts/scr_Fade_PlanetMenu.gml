@@ -6,6 +6,7 @@
             {
                 room_goto(Merc_Info);
                 varia.plan1 = false;
+                varia.planet1 = "DONE";
                 
             }
             
@@ -17,6 +18,7 @@
             {
                 room_goto(Venus_Info);
                 varia.plan2 = false;
+                varia.planet2 = "DONE";
                 
             }
             
@@ -28,6 +30,7 @@
             {
                 room_goto(Mars_Info);   
                 varia.plan3 = false;
+                varia.planet3 = "DONE";
                 
             }
         
@@ -39,6 +42,7 @@
             {
                 room_goto(Jupi_Info);    
                 varia.plan4 = false;
+                varia.planet4 = "DONE";
                 
             }
         
@@ -51,9 +55,8 @@
             {
                 room_goto(Satu_Info);
                 varia.plan5 = false;
-                
+                varia.planet5 = "DONE";
             }
-            
             
             break;
             
@@ -63,9 +66,8 @@
             {
                 room_goto(Uran_Info);
                 varia.plan6 = false;
-                
-            }
-            
+                varia.planet6 = "DONE";                
+            }            
             
             break;
             
@@ -75,9 +77,20 @@
             {
                 room_goto(Nept_Info);
                 varia.plan7 = false;
-                
+                varia.planet7 = "DONE";                
             }
             
+            break;
+            
+            case "PlanetX":
+            
+            if (varia.plan9)
+            {
+                room_goto(PlanetX);
+                varia.plan9 = false;
+                varia.planet9 = "DONE";
+            }
+   
             break;
             
             case "MainMenu":

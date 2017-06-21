@@ -114,6 +114,15 @@
         <script>scripts\scr_Info_OnStep.gml</script>
         <script>scripts\scr_Info_OnDraw.gml</script>
       </scripts>
+      <scripts name="Fade">
+        <script>scripts\scr_Fade_OnCreate.gml</script>
+        <script>scripts\scr_Fade_OnDraw.gml</script>
+        <scripts name="Step Functions">
+          <script>scripts\scr_Fade_Info.gml</script>
+          <script>scripts\scr_Fade_Menu.gml</script>
+          <script>scripts\scr_Fade_PlanetMenu.gml</script>
+        </scripts>
+      </scripts>
       <script>scripts\scr_Manager_GUI.gml</script>
     </scripts>
     <scripts name="Obstacles">

@@ -2,7 +2,6 @@
             {
                 case "Merc_Info":
                 
-                varia.planet1 = "DONE";
                 room_goto(Mercurius);
                 varia.playerLives = varia.startPlayerLives;
                 varia.currentPlanet = "Mercurius";
@@ -11,7 +10,6 @@
                 
                 case "Venus_Info":
                 
-                varia.planet2 = "DONE";
                 room_goto(Venus);
                 varia.playerLives = varia.startPlayerLives;
                 varia.currentPlanet = "Venus";
@@ -28,7 +26,6 @@
                 
                 case "Mars_Info":
                 
-                varia.planet3 = "DONE";
                 room_goto(Mars);
                 varia.playerLives = varia.startPlayerLives;
                 varia.currentPlanet = "Mars";
@@ -37,7 +34,6 @@
                 
                 case "Jupi_Info":
                 
-                varia.planet4 = "DONE";
                 room_goto(Jupiter);
                 varia.playerLives = varia.startPlayerLives;
                 varia.currentPlanet = "Jupiter";
@@ -46,7 +42,6 @@
                 
                 case "Satu_Info":
                 
-                varia.planet5 = "DONE";
                 room_goto(Saturnus);
                 varia.playerLives = varia.startPlayerLives;
                 varia.currentPlanet = "Saturnus";
@@ -55,7 +50,6 @@
                 
                 case "Uran_Info":
                 
-                varia.planet6 = "DONE";
                 room_goto(Uranus);
                 varia.playerLives = varia.startPlayerLives;
                 varia.currentPlanet = "Uranus";
@@ -64,136 +58,19 @@
                 
                 case "Nept_Info":
                 
-                varia.planet7 = "DONE";
                 room_goto(Neptunus);
                 varia.playerLives = varia.startPlayerLives;
                 varia.currentPlanet = "Neptunus";
                 
                 break;
                 
-                case "Mercurius":
-    
-                room_goto(PlanetMenu);
-                varia.playerLives = varia.startPlayerLives;
-                varia.newPlanet = "";
-                varia.currentPlanet = varia.newPlanet;
-                
-                if (start)
-                {
-                    varia.planetsLeft -= 1;
-                    start = false;
-                }
-                
-                break;
-                
-                case "Venus":
-                
-                room_goto(PlanetMenu);
-                varia.playerLives = varia.startPlayerLives;
-                varia.newPlanet = "";
-                varia.currentPlanet = varia.newPlanet;
-                
-                if (start)
-                {
-                    varia.planetsLeft -= 1;
-                    start = false;
-                }
-                
-                break;
-                
-                case "Earth":
-                
-                room_goto(PlanetMenu);
-                varia.playerLives = varia.startPlayerLives;
-                varia.newPlanet = "";
-                varia.currentPlanet = varia.newPlanet;
-                
-                if (start)
-                {
-                    varia.planetsLeft -= 1;
-                    start = false;
-                }
-                
-                break;
-                
-                case "Mars":
-                
-                room_goto(PlanetMenu);
-                varia.playerLives = varia.startPlayerLives;
-                varia.newPlanet = "";
-                varia.currentPlanet = varia.newPlanet;
-                
-                if (start)
-                {
-                    varia.planetsLeft -= 1;
-                    start = false;
-                }
-            
-                break;
-                
-                case "Jupiter":
-                
-                room_goto(PlanetMenu);
-                varia.playerLives = varia.startPlayerLives;
-                varia.newPlanet = "";
-                varia.currentPlanet = varia.newPlanet;
-                
-                if (start)
-                {
-                    varia.planetsLeft -= 1;
-                    start = false;
-                }
-                
-                break;
-                
-                case "Saturnus":
-                
-                room_goto(PlanetMenu);
-                varia.playerLives = varia.startPlayerLives;
-                varia.newPlanet = "";
-                varia.currentPlanet = varia.newPlanet;
-                
-                if (start)
-                {
-                    varia.planetsLeft -= 1;
-                    start = false;
-                }
-                
-                break;
-                
-                case "Uranus":
-                
-                room_goto(PlanetMenu);
-                varia.playerLives = varia.startPlayerLives;
-                varia.newPlanet = "";
-                varia.currentPlanet = varia.newPlanet;
-                
-                if (start)
-                {
-                    varia.planetsLeft -= 1;
-                    start = false;
-                }
-                
-                break;
-                
-                case "Neptunus":
-                
-                room_goto(PlanetMenu);
-                varia.playerLives = varia.startPlayerLives;
-                varia.newPlanet = "";
-                varia.currentPlanet = varia.newPlanet;
-                
-                if (start)
-                {
-                    varia.planetsLeft -= 1;
-                    start = false;
-                }
-                
-                break;
-                
                 default:
                 
-                
+                room_goto(PlanetMenu);
+                varia.playerLives = varia.startPlayerLives;
+                varia.newPlanet = "";
+                varia.currentPlanet = varia.newPlanet;
+                varia.planetsLeft -= 1;
                 
                 break;
             }  
