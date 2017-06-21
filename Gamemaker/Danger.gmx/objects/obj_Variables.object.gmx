@@ -25,15 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>planet1 = "Mercurius";
-planet2 = "Venus";
-planet3 = "Mars";
-planet4 = "Jupiter";
-planet5 = "Saturnus";
-planet6 = "Uranus";
-planet7 = "Neptunus";
-planet8 = "Earth";
-planet9 = "PlanetX";
+            <string>lang = "Dutch";
+
 
 plan1 = true;
 plan2 = true;
@@ -66,7 +59,7 @@ high = false;
 
 gameComplete = false;
 
-lang = "Dutch";
+
 
 xUnlocked = false;
 
@@ -95,7 +88,35 @@ difficulty = "Normal";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Tracks if all levels are done to win the game
+            <string>if(obj_Variables.lang == "Dutch")
+{
+    planet1 = "Mercurius";
+    planet2 = "Venus";
+    planet3 = "Mars";
+    planet4 = "Jupiter";
+    planet5 = "Saturnus";
+    planet6 = "Uranus";
+    planet7 = "Neptunus";
+    planet8 = "Aarde";
+    planet9 = "PlaneetX";
+}
+else
+{
+    planet1 = "Mercury";
+    planet2 = "Venus";
+    planet3 = "Mars";
+    planet4 = "Jupiter";
+    planet5 = "Saturn";
+    planet6 = "Uranus";
+    planet7 = "Neptune";
+    planet8 = "Earth";
+    planet9 = "PlanetX";
+}
+
+
+
+
+// Tracks if all levels are done to win the game
 if (planetsLeft &lt; 1)
 {
     newPlanet = "";
