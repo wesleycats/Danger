@@ -1,0 +1,22 @@
+diff a/Gamemaker/Danger.gmx/Danger.project.gmx b/Gamemaker/Danger.gmx/Danger.project.gmx	(rejected hunks)
+@@ -281,20 +281,6 @@
+       <room>rooms\Neptunus</room>
+       <room>rooms\PlanetX</room>
+     </rooms>
+-    <room>rooms\WinMenu</room>
+-    <rooms name="Planet Info">
+-      <room>rooms\Merc_Info</room>
+-      <room>rooms\Venus_Info</room>
+-      <room>rooms\Earth_Info</room>
+-      <room>rooms\Mars_Info</room>
+-      <room>rooms\Jupi_Info</room>
+-      <room>rooms\Satu_Info</room>
+-      <room>rooms\Uran_Info</room>
+-      <room>rooms\Nept_Info</room>
+-    </rooms>
+-    <room>rooms\Credits</room>
+-    <room>rooms\Controls</room>
+-    <room>rooms\Highscore</room>
+   </rooms>
+   <help>
+     <rtf>help.rtf</rtf>
