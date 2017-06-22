@@ -48,6 +48,8 @@
       <sprite>sprites\spr_Controls</sprite>
     </sprites>
     <sprite>sprites\spr_Selected</sprite>
+    <sprite>sprites\spr_flag_ENG</sprite>
+    <sprite>sprites\spr_flag_NL</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_WallPaper</background>
@@ -203,6 +205,7 @@
         <script>scripts\scr_Menu_OnStep.gml</script>
         <script>scripts\scr_Menu_OnDraw.gml</script>
         <script>scripts\scr_PlanMenu_OnDraw.gml</script>
+        <script>scripts\scr_MainMenu_OnDraw.gml</script>
         <scripts name="Step Functions">
           <script>scripts\scr_Menu_Tracker.gml</script>
           <script>scripts\scr_MainMenu_Activate.gml</script>
