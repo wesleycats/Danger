@@ -55,6 +55,12 @@
             
             break;
             
+            case "PlanetX":
+            
+            room_goto(PlanetX);
+            
+            break;
+            
             case "PlanetMenu":
             
             room_goto(PlanetMenu);

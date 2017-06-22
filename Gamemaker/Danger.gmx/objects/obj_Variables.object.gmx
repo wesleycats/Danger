@@ -137,20 +137,15 @@ highCoinsCollected = ini_read_real("Save", "Score", highCoinsCollected);
 ini_close(); 
 
 // Checks if score is higher than highscore and saves it
-
-
 if (coinsCollected &gt;= highCoinsCollected)
 {
-    if(room_get_name(room) == "WinMenu")
-    {
-        highName = name;
-        highCoinsCollected = coinsCollected;
+    highName = name;
+    highCoinsCollected = coinsCollected;
     
-        ini_open("savedata.ini");
-        ini_write_string("Save", "Name", highName);
-        ini_write_real("Save", "Score", highCoinsCollected);
-        ini_close(); 
-    }
+    ini_open("savedata.ini");
+    ini_write_string("Save", "Name", highName);
+    ini_write_real("Save", "Score", highCoinsCollected);
+    ini_close(); 
 }
 
 // Checks if game is done
