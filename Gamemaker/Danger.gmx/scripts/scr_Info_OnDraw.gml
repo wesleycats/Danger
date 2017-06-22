@@ -58,6 +58,12 @@ if (obj_Variables.lang = "Dutch")
         
         case "Mars":
         
+        draw_text_transformed_colour(room_width / 2, 40, "Mars is de 4de planeet in ons zonnenstelsel.", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+        draw_text_transformed_colour(room_width / 2, 80, "De planeet is ongeveer de helft van aarde.", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+        draw_text_transformed_colour(room_width / 2, 120,"Het is op mars maar -60 graden dus pas op dat je niet bevriest!", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+        draw_text_transformed_colour(room_width / 2, 160, "De zwaartekracht op mars is maar 0.38g dus je ", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+        draw_text_transformed_colour(room_width / 2, 200, "lancering zal sneller gaan dan op andere planeten", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+        
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 80, "Planeet naam: Mars", 2, 2, 1, c_red, c_red, c_red, c_red, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "Diameter: 6792 km", 2, 2, 1, c_red, c_red, c_red, c_red, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 0, "Gewicht: 6.42 * 10^23 kg", 2, 2, 1, c_red, c_red, c_red, c_red, 1);
