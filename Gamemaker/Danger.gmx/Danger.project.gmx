@@ -42,6 +42,9 @@
     <sprites name="Textbox">
       <sprite>sprites\spr_TextBox</sprite>
     </sprites>
+    <sprites name="Overlays">
+      <sprite>sprites\sprite30</sprite>
+    </sprites>
     <sprites name="Background">
       <sprite>sprites\spr_WinMenuScreen</sprite>
       <sprite>sprites\spr_MainMenu</sprite>
@@ -288,6 +291,9 @@
       <object>objects\obj_MainMenu</object>
       <object>objects\obj_Highscore</object>
       <object>objects\obj_Controls</object>
+    </objects>
+    <objects name="Overlays">
+      <object>objects\obj_Gas</object>
     </objects>
   </objects>
   <rooms name="rooms">
