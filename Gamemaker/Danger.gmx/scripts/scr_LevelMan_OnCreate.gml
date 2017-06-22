@@ -10,7 +10,7 @@ varia = instance_find(obj_Variables, 1);
 
 mainMenu = false;
 
-if (roomName != "Menu" && roomName != "PlanetMenu" && roomName != "Credits" && roomName != "Controls" && roomName != "Highscore" && roomName != "WinMenu")
+if (roomName == "Mercurius" || roomName == "Venus" || roomName == "Earth" || roomName == "Mars" || roomName == "Jupiter" || roomName == "Saturnus" || roomName == "Uranus" || roomName == "Neptunus" || roomName == "PlanetX")
 {
     keysCollected = 0;
     
