@@ -1,4 +1,4 @@
-a = clamp(a + (fade * 0.025), 0, 1);
+a = clamp(a + (fade * 0.05), 0, 1);
 
 if (a == 1)
 {   

@@ -70,7 +70,7 @@
                 varia.playerLives = varia.startPlayerLives;
                 varia.newPlanet = "";
                 varia.currentPlanet = varia.newPlanet;
-                varia.planetsLeft -= 1;
+                varia.planetsLeft -= 0; // what to do
                 
                 break;
             }  

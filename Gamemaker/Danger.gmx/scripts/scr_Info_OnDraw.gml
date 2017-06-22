@@ -7,13 +7,19 @@ if (obj_Variables.lang = "Dutch")
     switch (varia.newPlanet)
     {
         case "Mercurius":
-        
+        /*
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 80, "Planeet naam: Mercurius", 2, 2, 1, c_gray, c_gray, c_gray, c_gray, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "Diameter: 4880 km", 2, 2, 1, c_gray, c_gray, c_gray, c_gray, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 0, "Gewicht: 3.30 * 10^23", 2, 2, 1, c_gray, c_gray, c_gray, c_gray, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "Gemiddelde temperatuur: 167 °C", 2, 2, 1, c_gray, c_gray, c_gray, c_gray, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 + 80, "Zwaartekracht: 0.38 g", 2, 2, 1, c_gray, c_gray, c_gray, c_gray, 1);
+        */
         
+        draw_text_transformed_colour(room_width / 2, room_height / 2 - 80, "Mercurius is de dichtstbijzijnde planeet bij de zon van onze zonnestelsel.", 2, 2, 1, c_gray, c_gray, c_gray, c_gray, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "De planeet is ruim twee en een half keer kleiner dan Aarde.", 2, 2, 1, c_gray, c_gray, c_gray, c_gray, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 - 0, "De gemiddelde temperatuur op Mercurius is 167°C, dus pas op dat je raket niet overhit raakt!", 2, 2, 1, c_gray, c_gray, c_gray, c_gray, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "Mercurius heeft ook maar een zwaartekracht van 0.38g waardoor je dus ook", 2, 2, 1, c_gray, c_gray, c_gray, c_gray, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 + 80, "sneller opstijgt dan op andere planeten.", 2, 2, 1, c_gray, c_gray, c_gray, c_gray, 1);
         break;
         
         case "Venus":
@@ -28,11 +34,25 @@ if (obj_Variables.lang = "Dutch")
         
         case "Earth":
         
+        /*
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 80, "Planeet naam: Aarde", 2, 2, 1, c_blue, c_blue, c_blue, c_blue, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "Diameter: 12756,28 km", 2, 2, 1, c_blue, c_blue, c_blue, c_blue, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "Diameter: 12756 km", 2, 2, 1, c_blue, c_blue, c_blue, c_blue, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 0, "Gewicht: 5.98 * 10^24 kg", 2, 2, 1, c_blue, c_blue, c_blue, c_blue, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "Gemiddelde temperatuur: 16 °C", 2, 2, 1, c_blue, c_blue, c_blue, c_blue, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 + 80, "Zwaartekracht: 1 g", 2, 2, 1, c_blue, c_blue, c_blue, c_blue, 1);
+        */
+        
+        draw_text_transformed_colour(room_width / 2, 40, "Je raket moet eerst opstijgen vanaf aarde voordat je in de lucht bent.", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+        draw_text_transformed_colour(room_width / 2, 80, "Door spatie ingedrukt te houden verhoog en verlaag je de lanceerkracht.", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+        draw_text_transformed_colour(room_width / 2, 120, "Als je de spatiebalk loslaat, lanceer je de lucht in.", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+        draw_text_transformed_colour(room_width / 2, 160, "Als je dan spatiebalk weer ingedrukt houdt kan je vliegen.", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+        draw_text_transformed_colour(room_width / 2, 200, "Doormiddel van 'A' en 'D' kan je de obstakels ontwijken.", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+        
+        draw_text_transformed_colour(room_width / 2, room_height / 2 - 80, "Planeet naam: Aarde", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "Diameter: 12756 km", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 - 0, "Gewicht: 5.98 * 10^24 kg", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "Gemiddelde temperatuur: 16 °C", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 + 80, "Zwaartekracht: 1 g", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
         
         break;
         
@@ -116,7 +136,7 @@ if(obj_Variables.lang = "English")
         case "Earth":
         
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 80, "Planet name: Earth", 2, 2, 1, c_blue, c_blue, c_blue, c_blue, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "Diameter: 12756,28 km", 2, 2, 1, c_blue, c_blue, c_blue, c_blue, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "Diameter: 12756 km", 2, 2, 1, c_blue, c_blue, c_blue, c_blue, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 0, "Weight: 5.98 * 10^24 kg", 2, 2, 1, c_blue, c_blue, c_blue, c_blue, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "Average Temperature: 16 °C", 2, 2, 1, c_blue, c_blue, c_blue, c_blue, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 + 80, "Gravity: 1 g", 2, 2, 1, c_blue, c_blue, c_blue, c_blue, 1);
