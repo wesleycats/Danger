@@ -47,6 +47,8 @@ if (obj_Variables.lang = "Dutch")
         draw_text_transformed_colour(room_width / 2, 120, "Als je de spatiebalk loslaat, lanceer je de lucht in.", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
         draw_text_transformed_colour(room_width / 2, 160, "Als je dan spatiebalk weer ingedrukt houdt kan je vliegen.", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
         draw_text_transformed_colour(room_width / 2, 200, "Doormiddel van 'A' en 'D' kan je de obstakels ontwijken.", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+        draw_text_transformed_colour(room_width / 2, 240, "Om door te gaan naar het volgende level,", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+        draw_text_transformed_colour(room_width / 2, 280, "moet je alle 3 de sleutels hebben opgepakt en daarna de ruimte in vliegen.", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
         
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 80, "Planeet naam: Aarde", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "Diameter: 12756 km", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
@@ -58,17 +60,19 @@ if (obj_Variables.lang = "Dutch")
         
         case "Mars":
         
-        draw_text_transformed_colour(room_width / 2, 40, "Mars is de 4de planeet in ons zonnenstelsel.", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
-        draw_text_transformed_colour(room_width / 2, 80, "De planeet is ongeveer de helft van aarde.", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
-        draw_text_transformed_colour(room_width / 2, 120,"Het is op mars maar -60 graden dus pas op dat je niet bevriest!", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
-        draw_text_transformed_colour(room_width / 2, 160, "De zwaartekracht op mars is maar 0.38g dus je ", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
-        draw_text_transformed_colour(room_width / 2, 200, "lancering zal sneller gaan dan op andere planeten", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 - 80, "Mars is de 4de planeet in ons zonnenstelsel.", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "De planeet is ongeveer de helft van aarde.", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 - 0, "Het is op mars maar -60 graden dus pas op dat je niet bevriest!", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "De zwaartekracht op mars is maar 0.38g dus je ", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 + 80, "lancering zal sneller gaan dan op andere planeten", 2, 2, 1, c_aqua, c_aqua, c_aqua, c_aqua, 1);
         
+        /*
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 80, "Planeet naam: Mars", 2, 2, 1, c_red, c_red, c_red, c_red, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "Diameter: 6792 km", 2, 2, 1, c_red, c_red, c_red, c_red, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 0, "Gewicht: 6.42 * 10^23 kg", 2, 2, 1, c_red, c_red, c_red, c_red, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "Gemiddelde temperatuur: -60 °C", 2, 2, 1, c_red, c_red, c_red, c_red, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 + 80, "Zwaartekracht: 0.38 g", 2, 2, 1, c_red, c_red, c_red, c_red, 1);
+        */
         
         break;
         
