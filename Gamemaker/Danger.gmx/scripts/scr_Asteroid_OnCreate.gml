@@ -12,8 +12,10 @@ flyDir = obj_ObsMan.astFlyDir;
 rot = 0;
 randRot = random_range(-4, 4);
 
-xScale = random_range(1, 2.5);
-yScale = random_range(1, 2.5);
+xScale = random_range(1, 7);
+yScale = xScale;
+image_xscale = xScale;
+image_yscale = xScale;
 
 image_index = choose(0, 1);
 

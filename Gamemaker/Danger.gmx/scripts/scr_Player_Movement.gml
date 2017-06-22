@@ -112,7 +112,10 @@ if (vspCurrent >= maxDownVsp)
 }
 
 // When player finishes the level
-if (y <= 50)
+if (obj_LevelMan.keysCollected = 3)
 {
-    instance_create(x, y, obj_Fade);
+    if (y <= 50)
+    {
+        instance_create(x, y, obj_Fade);
+    }
 }

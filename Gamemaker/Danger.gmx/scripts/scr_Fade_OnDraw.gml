@@ -43,6 +43,7 @@ if (a == 0 && fade == -1)
 {
     instance_destroy();
     obj_Variables.activated = false;
+    obj_Variables.substract = true;
 }
 
 draw_set_color(c_black);

@@ -7,7 +7,6 @@
                 room_goto(Merc_Info);
                 varia.plan1 = false;
                 varia.planet1 = "DONE";
-                
             }
             
             break;

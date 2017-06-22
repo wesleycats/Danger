@@ -27,7 +27,6 @@
             <kind>1</kind>
             <string>lang = "Dutch";
 
-
 plan1 = true;
 plan2 = true;
 plan3 = true;
@@ -59,13 +58,13 @@ high = false;
 
 gameComplete = false;
 
-
-
 xUnlocked = false;
 
 activated = false;
 
 difficulty = "Normal";
+
+substract = true;
 </string>
           </argument>
         </arguments>
@@ -90,27 +89,97 @@ difficulty = "Normal";
             <kind>1</kind>
             <string>if(obj_Variables.lang == "Dutch")
 {
-    planet1 = "Mercurius";
-    planet2 = "Venus";
-    planet3 = "Mars";
-    planet4 = "Jupiter";
-    planet5 = "Saturnus";
-    planet6 = "Uranus";
-    planet7 = "Neptunus";
-    planet8 = "Aarde";
-    planet9 = "PlaneetX";
+    if (plan1)
+    {
+        planet1 = "Mercurius";
+    }
+    
+    if (plan2)
+    {
+        planet2 = "Venus";
+    }
+    
+    if (plan3)
+    {
+        planet3 = "Mars";
+    }
+    
+    if (plan4)
+    {
+        planet4 = "Jupiter";
+    }
+    
+    if (plan5)
+    {
+        planet5 = "Saturnus";
+    }
+    
+    if (plan6)
+    {
+        planet6 = "Uranus";
+    }
+    
+    if (plan7)
+    {
+        planet7 = "Neptunus";
+    }
+    
+    if (plan8)
+    {
+        planet8 = "Aarde";
+    }
+    
+    if (plan9)
+    {
+        planet9 = "PlaneetX";
+    }
 }
 else
 {
-    planet1 = "Mercury";
-    planet2 = "Venus";
-    planet3 = "Mars";
-    planet4 = "Jupiter";
-    planet5 = "Saturn";
-    planet6 = "Uranus";
-    planet7 = "Neptune";
-    planet8 = "Earth";
-    planet9 = "PlanetX";
+    if (plan1)
+    {
+        planet1 = "Mercury";
+    }
+    
+    if (plan2)
+    {
+        planet2 = "Venus";
+    }
+    
+    if (plan3)
+    {
+        planet3 = "Mars";
+    }
+    
+    if (plan4)
+    {
+        planet4 = "Jupiter";
+    }
+    
+    if (plan5)
+    {
+        planet5 = "Saturn";
+    }
+    
+    if (plan6)
+    {
+        planet6 = "Uranus";
+    }
+    
+    if (plan7)
+    {
+        planet7 = "Neptune";
+    }
+    
+    if (plan8)
+    {
+        planet8 = "Earth";
+    }
+    
+    if (plan9)
+    {
+        planet9 = "PlanetX";
+    }
 }
 
 

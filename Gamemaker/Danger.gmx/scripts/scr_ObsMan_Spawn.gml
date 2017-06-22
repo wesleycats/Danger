@@ -1,10 +1,5 @@
 var roomName = room_get_name(room);
 
-if (roomName != "Menu" && roomName != "PlanetMenu")
-{
-    
-}
-
 switch (roomName)
 {   
     case "Mercurius":

@@ -17,6 +17,7 @@
     <sprites name="World">
       <sprite>sprites\spr_Ground</sprite>
       <sprite>sprites\spr_Coin</sprite>
+      <sprite>sprites\spr_Key</sprite>
       <sprites name="Planets">
         <sprite>sprites\spr_Plan1</sprite>
         <sprite>sprites\spr_Plan2</sprite>
@@ -198,6 +199,15 @@
           <script>scripts\scr_Coin_Collision.gml</script>
         </scripts>
       </scripts>
+      <scripts name="Key">
+        <script>scripts\scr_Key_OnCreate.gml</script>
+        <script>scripts\scr_Key_OnStep.gml</script>
+        <script>scripts\scr_Key_OnDraw.gml</script>
+        <scripts name="Step Functions">
+          <script>scripts\scr_Key_Collision.gml</script>
+          <script>scripts\scr_Key_Spawn.gml</script>
+        </scripts>
+      </scripts>
     </scripts>
     <scripts name="Menu">
       <scripts name="Menu">
@@ -267,6 +277,7 @@
         <object>objects\obj_Plan6</object>
         <object>objects\obj_Plan7</object>
       </objects>
+      <object>objects\obj_Key</object>
     </objects>
     <objects name="TextBox">
       <object>objects\obj_Text</object>
