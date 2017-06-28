@@ -43,7 +43,8 @@
       <sprite>sprites\spr_TextBox</sprite>
     </sprites>
     <sprites name="Overlays">
-      <sprite>sprites\sprite30</sprite>
+      <sprite>sprites\spr_JupiterOver</sprite>
+      <sprite>sprites\spr_Cloud</sprite>
     </sprites>
     <sprites name="Background">
       <sprite>sprites\spr_WinMenuScreen</sprite>
@@ -60,13 +61,17 @@
     <background>background\bg_Space</background>
     <backgrounds name="Planets">
       <background>background\bg_Mercurius</background>
+      <background>background\bg_MercuriusENG</background>
       <background>background\bg_Venus</background>
       <background>background\bg_Earth</background>
+      <background>background\bg_EarthENG</background>
       <background>background\bg_Mars</background>
       <background>background\bg_Jupiter</background>
       <background>background\bg_Saturnus</background>
+      <background>background\bg_SaturnusENG</background>
       <background>background\bg_Uranus</background>
       <background>background\bg_Neptunus</background>
+      <background>background\bg_NeptunusENG</background>
       <background>background\bg_PlanetX</background>
     </backgrounds>
     <backgrounds name="Menu">
@@ -294,6 +299,7 @@
     </objects>
     <objects name="Overlays">
       <object>objects\obj_Gas</object>
+      <object>objects\obj_Cloud</object>
     </objects>
   </objects>
   <rooms name="rooms">

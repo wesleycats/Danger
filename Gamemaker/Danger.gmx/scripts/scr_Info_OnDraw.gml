@@ -115,7 +115,7 @@ if (obj_Variables.lang = "Dutch")
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "In de planeet passen 764 aarde's en bestaat vooral uit gas", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 -  0, "hierdoor kan je minder goed zien dan op andere planeten.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "De temperatuur op Saturnus is -178°C dus pas op dat je niet bevriest.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 + 80, "De zwaartekracht is hier 1.07g dus je valt iets sneller naarbeneden,", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 + 80, "De zwaartekracht is hier 1.07g dus je valt iets sneller naar beneden.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
         
         break;
         
@@ -175,6 +175,8 @@ if(obj_Variables.lang = "English")
         draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "Mercury's gravity is 0.38g, this is why you will", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 + 80, "launch faster than on other planets!", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
         
+        break;
+        
         case "Venus":
         /*
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 80, "Venus is de 2e planeet in ons  zonnestelsel.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
@@ -185,9 +187,9 @@ if(obj_Variables.lang = "English")
         */
         
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 80, "Venus is the second planet in our solarsystem.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "Earth is a little bit bigger than Venus, Venus is 19% smaller than earth.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 -  0, "The temperature is 462°C on Venus, so be catious or you might overheat!", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "Venus has a gravity of 0.91 so will float a bit more than on other planets.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "Venus is a little smaller than Earth, around 19% actually.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 -  0, "The temperature on Venus is around 462°C, so be cautious or you might overheat!", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "There is a gravity of 0.91 on this planet, so you will float more than on other planets.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
         
         break;
         
@@ -218,7 +220,7 @@ if(obj_Variables.lang = "English")
         
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 80, "Mars is the fourth planet in our solar system", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "The planet is about half the size of earth", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 - 0,  "Mars only has a temperature of -60°C so be catious to not freeze", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 - 0,  "Mars only has a temperature of -60°C so be cautious not to freeze", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "The gravity on mars is only 0.38°C so youu will", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 + 80, "launch faster than on other planets", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
         
@@ -236,7 +238,7 @@ if(obj_Variables.lang = "English")
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 80, "Jupiter is the fith planet in our solar system", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "In jupiter can fit 1321 earths and exists mostly out of gas", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 0,  "because of this your vision on this planet wont be as good like on other planets", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "Jupiter is only -145°c so be catious to not freeze!", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "Jupiter is only -145°c so be cautious not to freeze!", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 + 80, "The gravity is here 2.53g so you will descend much faster!", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
         
         break;
@@ -251,10 +253,11 @@ if(obj_Variables.lang = "English")
         */
         
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 80, "Saturn is the sixth planet in our solar system", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "In Saturn can fit 764 earths and exists mostly out of gas", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 -  0, "because of this your vision on this planet wont be as good like on other planets", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "The temperature is here -178°C so be catious to not freeze", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 + 80, "The gravity is here 1.07g so you will descend a little faster than usual", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "Saturn is not even the biggest planet, but is still as big as 764 earths,", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 -  0, "and exists mostly out of gas.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "Because of this, your vision on this planet wont be as good like on other planets", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 + 80, "The temperature is here -178°C so be cautious not to freeze", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 + 120, "The gravity is here 1.07g so you will descend a little faster than usual.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
         
         break;
         
@@ -268,10 +271,10 @@ if(obj_Variables.lang = "English")
         */
         
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 80, "Uranus is the seventh planet in our solar sytem", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "in uranus fits 63 earths", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 - 0,  "Uranus has an average temperature of -205°C so be catious", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "to not freeze.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 + 80, "Uranus has a gravity of 0.90g so u will float longer than usual", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "Uranus has the size of 63 earths", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 - 0,  "Uranus has an average temperature of -205°C, so be cautious", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "not to freeze your rocket.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 + 80, "Uranus has a gravity of 0.90g so u will float longer than usual.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
         
         
         break;
@@ -284,10 +287,10 @@ if(obj_Variables.lang = "English")
         draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "De zwaartekracht is hier 1.14g dus je valt iets sneller dan normaal", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
         */
         
-        draw_text_transformed_colour(room_width / 2, room_height / 2 - 80, "Neptune is the eight planet of our solarsystem", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 - 80, "Neptune is the eight planet of our solarsystem.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
         draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "Neptune can fit 58 earths", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 - 0,  "It is only -214°C so be catious to not freeze", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "The gravity is here 1.14g so you will descend faster than usual", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 - 0,  "It is only -214°C so be cautious not to freeze your rocket!", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+        draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "The gravity here is 1.14g, so you will descend faster than usual.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
         
         break;
     }

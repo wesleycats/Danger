@@ -10,7 +10,20 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>background_index[0] = bg_Saturnus;
+background_index[1] = bg_SaturnusENG;
+
+if (obj_Variables.lang == "English")
+{
+    background_visible[0] = false;
+    background_visible[1] = true;
+}
+
+if (obj_Variables.lang == "Dutch")
+{
+    background_visible[0] = true;
+    background_visible[1] = false;
+}</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
