@@ -9,6 +9,12 @@ if (keyboard_check_pressed(ord('C')))
     }   
 }
 
+if (keyboard_check_pressed(ord('L')))
+{
+    room_goto(PlanetX);
+    varia.currentRoom = "PlanetX";
+}
+
 if (keyboard_check_pressed(ord('X')))
 {
     varia.planetsLeft -= 1;

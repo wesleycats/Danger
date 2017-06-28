@@ -10,3 +10,9 @@ satSpawnChance = random_range(0, 100);
 debSpawnChance = random_range(0, 100);
 
 scr_ObsMan_Difficulty();
+
+if (keyboard_check_pressed(ord('G')))
+{
+    scr_X_Spawn();
+}
+

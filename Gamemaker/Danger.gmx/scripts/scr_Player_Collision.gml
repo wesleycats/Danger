@@ -34,3 +34,8 @@ if (x >= room_width - (sprite_width / 2))
 {
     x = room_width - (sprite_width / 2);
 }
+
+if (y <= 51)
+{
+    y = 51;
+}

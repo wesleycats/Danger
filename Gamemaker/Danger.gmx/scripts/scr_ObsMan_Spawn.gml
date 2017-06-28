@@ -74,11 +74,6 @@ switch (roomName)
         scr_Debris_Spawn();
     }
     
-    if (XSpawnChance > 5)
-    {
-        scr_X_Spawn();
-    }  
-    
     break;
     
     case "Mars":

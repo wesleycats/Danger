@@ -2,7 +2,7 @@
         {
             case "Earth":
             
-            room_goto(Earth_Info);
+            room_goto(Earth_Info1);
             
             break;
             

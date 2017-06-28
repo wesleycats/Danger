@@ -1,7 +1,7 @@
 hspCurrent = 0;
 vspCurrent = 0;
 maxHsp = 10;
-maxVsp = 5;
+maxVsp = random_range(1, 5);
 horAcceleration = 2;
 verAcceleration = 1;
 verGravity = 0.5;

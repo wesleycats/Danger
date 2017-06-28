@@ -49,9 +49,6 @@ highName = "None";
 highCoinsCollected = 0;
 highScore = false;
 
-startPlayerLives = 10;
-playerLives = 10;
-
 cont = false;
 cred = false;
 high = false;
@@ -65,6 +62,26 @@ activated = false;
 difficulty = "Normal";
 
 substract = true;
+
+if (difficulty == "Easy")
+{
+    startPlayerLives = 10;
+    playerLives = 10;
+}
+
+if (difficulty == "Normal")
+{
+    startPlayerLives = 5;
+    playerLives = 5;
+}
+
+if (difficulty == "Hard")
+{
+    startPlayerLives = 3;
+    playerLives = 3;
+}
+
+window_set_cursor(cr_none);
 </string>
           </argument>
         </arguments>

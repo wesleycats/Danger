@@ -7,10 +7,22 @@ if (a == 1)
         scr_Fade_Menu();
     }
     
-    if (roomName != "Menu" && roomName != "PlanetMenu" && roomName != "Credits" && roomName != "Controls" && roomName != "Highscore" && roomName != "WinMenu")
+    if (roomName != "Menu" && roomName != "PlanetMenu" && roomName != "Credits" && roomName != "Controls" && roomName != "Highscore" && roomName != "WinMenu" && roomName != "Earth_Info1" && roomName != "Earth_Info2")
     {          
         scr_Fade_Info();
     }          
+    
+    if (roomName == "Earth_Info1")
+    {
+        room_goto(Earth_Info2);
+        varia.newPlanet = "Earth";
+    }
+    
+    if (roomName == "Earth_Info2")
+    {
+        room_goto(Earth);
+        varia.newPlanet = "Earth";
+    }
     
     if (obj_LevelMan.mainMenu)
     {
