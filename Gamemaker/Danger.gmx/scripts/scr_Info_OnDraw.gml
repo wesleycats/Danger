@@ -50,18 +50,27 @@ if (obj_Variables.lang = "Dutch")
         draw_text_transformed_colour(room_width / 2, room_height / 2 + 80, "Zwaartekracht: 1 g", 2, 2, 1, c_red, c_red, c_red, c_red, 1);
         */
         
-        draw_text_transformed_colour(room_width / 2, 40, "Je raket moet eerst opstijgen vanaf aarde voordat je in de lucht bent.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, 80, "Door spatie ingedrukt te houden verhoog en verlaag je de lanceerkracht.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, 120, "Als je de spatiebalk loslaat, lanceer je de lucht in.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, 160, "Als je dan spatiebalk weer ingedrukt houdt kan je vliegen.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, 200, "Doormiddel van 'A' en 'D' kan je de obstakels ontwijken.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, 240, "Om door te gaan naar het volgende level,", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, 280, "moet je alle 3 de sleutels hebben opgepakt en daarna de ruimte in vliegen.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+        if (roomName == "Earth_Info1")
+        {      
+            draw_set_halign(fa_left);    
         
-        draw_text_transformed_colour(room_width / 2, room_height / 2 - 80, "Aarde is de 3e planeet in ons zonnenstelsel.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "Aarde is 12756km groot en is gemiddeld 16°C", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 -  0, "De zwaartekracht is op Aarde 1g", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "Aarde is huidig de enige bewoonbare planeet in ons zonnenstelsel", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+            draw_text_transformed_colour(100, 100, "Hou spatie ingedrukt om de opstijgkracht te kiezen.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+            draw_text_transformed_colour(100, 140, "Laat spatie los om op te stijgen en hou dan weer ingedrukt", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+            draw_text_transformed_colour(100, 180, "om te vliegen.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+                        
+        }
+        
+        draw_set_halign(fa_middle);
+        
+        // TODO FIX THE TUTORIAL
+        
+        if (roomName == "Earth_Info2")
+        {      
+            draw_text_transformed_colour(room_width / 2, room_height / 2 - 80, "Aarde is de 3e planeet in ons zonnenstelsel.", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+            draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "Aarde is 12756km groot en is gemiddeld 16°C", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+            draw_text_transformed_colour(room_width / 2, room_height / 2 -  0, "De zwaartekracht is op Aarde 1g", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+            draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "Aarde is huidig de enige bewoonbare planeet in ons zonnenstelsel", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+        }
         
         break;
         
@@ -201,11 +210,13 @@ if(obj_Variables.lang = "English")
         draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "Aarde is huidig de enige bewoonbare planeet in ons zonnenstelsel", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
         */
         
-        draw_text_transformed_colour(room_width / 2, room_height / 2 - 80, "Earth is the third plannet in our solar system", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "Earth has a size of 12756KM and has an average temperature of 16°C", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 -  0, "The gravity on earth is 1g", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "Earth is currently the only habitable planet in our Solar sytem", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
-        
+        if (roomName == "Earth_Info2")
+        {
+            draw_text_transformed_colour(room_width / 2, room_height / 2 - 80, "Earth is the third plannet in our solar system", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+            draw_text_transformed_colour(room_width / 2, room_height / 2 - 40, "Earth has a size of 12756KM and has an average temperature of 16°C", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+            draw_text_transformed_colour(room_width / 2, room_height / 2 -  0, "The gravity on earth is 1g", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+            draw_text_transformed_colour(room_width / 2, room_height / 2 + 40, "Earth is currently the only habitable planet in our Solar sytem", 2, 2, 0, c_red, c_red, c_red, c_red, 1);
+        }
         
         break;
         

@@ -301,6 +301,9 @@
       <object>objects\obj_Gas</object>
       <object>objects\obj_Cloud</object>
     </objects>
+    <objects name="Tutorial">
+      <object>objects\obj_PlayerTut</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu</room>
